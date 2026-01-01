@@ -1,5 +1,6 @@
 "use client";
 
+import CourseCatalog from "@/components/CourseCatalog";
 import type CourseProps from "@/types/CourseProps";
 import {
   Dialog,
@@ -11,14 +12,8 @@ import {
   DialogFooter,
   DialogClose,
 } from "@/components/ui/dialog";
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupInput,
-} from "@/components/ui/input-group";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
-import { Plus, Search, X, Pen, Trash2, Save } from "lucide-react";
+import { Plus, X, Pen, Trash2, Save } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Course({ title, credits }: CourseProps) {
@@ -52,15 +47,7 @@ export default function Course({ title, credits }: CourseProps) {
                     from here.
                   </DialogDescription>
                 </DialogHeader>
-                <div className="flex flex-col gap-2 w-full">
-                  <InputGroup>
-                    <InputGroupInput placeholder="Search courses by name..." />
-                    <InputGroupAddon>
-                      <Search />
-                    </InputGroupAddon>
-                  </InputGroup>
-                  <ScrollArea className="h-100 border rounded-md"></ScrollArea>
-                </div>
+                <CourseCatalog />
                 <DialogFooter>
                   <DialogClose asChild>
                     <Button variant="secondary">
@@ -97,15 +84,7 @@ export default function Course({ title, credits }: CourseProps) {
                 Search for a course and add it to your course plan from here.
               </DialogDescription>
             </DialogHeader>
-            <div className="flex flex-col gap-2 w-full">
-              <InputGroup>
-                <InputGroupInput placeholder="Search courses by name..." />
-                <InputGroupAddon>
-                  <Search />
-                </InputGroupAddon>
-              </InputGroup>
-              <ScrollArea className="h-100 border rounded-md"></ScrollArea>
-            </div>
+            <CourseCatalog />
             <DialogFooter>
               <DialogClose asChild>
                 <Button variant="secondary">

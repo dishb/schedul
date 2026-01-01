@@ -11,7 +11,7 @@ from os import remove
 
 from requests import get
 
-SAVE_DIR_PATH = Path(__file__).resolve().parent.parent / "public" / "courses"
+SAVE_DIR_PATH = Path(__file__).resolve().parent.parent / "data" / "courses"
 ALLOWED_KEYS = {"title",
                 "subjectAreaCode",
                 "email",
@@ -48,7 +48,7 @@ def get_compiled_course_info(institution_id: int):
         CSU system. This can be found in the URL of the course list.
     """
 
-    courses_save_path = SAVE_DIR_PATH / f"{institution_id}_courses.json"
+    courses_save_path = SAVE_DIR_PATH / f"{institution_id}.json"
     # pylint: disable=line-too-long
     res = get(f"https://hs-articulation.ucop.edu/api/public/courselist/institution/{institution_id}/list/29",
               timeout = 60

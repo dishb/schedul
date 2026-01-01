@@ -13,9 +13,9 @@ import { Button } from "@/components/ui/button";
 import { Check, Save, Maximize2, Minimize2 } from "lucide-react";
 import { useState } from "react";
 import Course from "@/components/Course";
-import type CourseListProps from "@/types/CourseListProps";
+import type CoursePlanProps from "@/types/CoursePlanProps";
 
-export default function CourseList({ gradeLevel, courses }: CourseListProps) {
+export default function CoursePlan({ gradeLevel, courses }: CoursePlanProps) {
   const [expanded, setExpanded] = useState(true);
 
   return (
