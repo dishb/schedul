@@ -1,0 +1,2684 @@
+[
+  {
+    "title": "AP Government and Politics United States",
+    "courseId": "491bdb04-03de-4ce1-bd61-74d98c8db4f2",
+    "disciplineName": "Civics / American Government",
+    "subjectAreaCode": "a",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Gov &amp; Pol: US (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Human Geography",
+    "courseId": "549ed7fa-2c3f-45ed-adca-62ac118d4f73",
+    "disciplineName": "World History / Cultures / Historical Geography",
+    "subjectAreaCode": "a",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Human Geo (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP United States History",
+    "courseId": "af5b6ba1-fc2e-4466-89d1-5492234b7cee",
+    "disciplineName": "U.S. History",
+    "subjectAreaCode": "a",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP US History (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP World History",
+    "courseId": "483bf86c-baa8-4a42-858b-f630fb022fe5",
+    "disciplineName": "World History / Cultures / Historical Geography",
+    "subjectAreaCode": "a",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP World History (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "Civics",
+    "courseId": "6f6e24dd-1172-4828-8360-5c9b888f565c",
+    "disciplineName": "Civics / American Government",
+    "subjectAreaCode": "a",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Civics (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Ethnic Studies",
+    "courseId": "88ff4a52-eaf6-497b-b392-d5aede56a8ff",
+    "disciplineName": "U.S. History",
+    "subjectAreaCode": "a",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Ethnic Studies (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors US Government and Politics/\"We The People\" Emphasis",
+    "courseId": "4059af5c-da3e-4a53-8fd8-1914b946e91b",
+    "disciplineName": "Civics / American Government",
+    "subjectAreaCode": "a",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Gov &amp; Pol WTP (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "U.S. History",
+    "courseId": "b89e40e5-9ed5-4feb-b7f9-51b6d595806f",
+    "disciplineName": "U.S. History",
+    "subjectAreaCode": "a",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "US History (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "World History",
+    "courseId": "136b8ece-210a-4563-8d5a-4f1ed19ac4b6",
+    "disciplineName": "World History / Cultures / Historical Geography",
+    "subjectAreaCode": "a",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "World History (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced Composition",
+    "courseId": "04bd6704-6429-415e-8d1a-0706f5abdc68",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Adv Comp/Wrld Lit (P)|Advanced Comp (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "African American Literature",
+    "courseId": "a3b1d71d-3644-4258-9fa7-0640b2141678",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "African American Lit (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP English Language and Composition",
+    "courseId": "19e25564-0bc3-490d-b13d-9c686a4da468",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Eng Lang/Comp (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP English Literature and Composition",
+    "courseId": "73379a55-b5d5-4c40-808a-7c188b1f9a67",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Eng Lit/Comp (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "British Literature",
+    "courseId": "bef699a1-d519-42bf-9d28-a8a4ef198755",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "British Literature (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "CSU Expository Reading and Writing",
+    "courseId": "b4f18c54-4144-4170-b9e0-7632baa791a1",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "CSU Expos Read &amp; Wrt (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "English 1",
+    "courseId": "17bfe0ab-73fe-4e62-b279-b040a62e070d",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|English 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "English 2",
+    "courseId": "68991e40-7a25-4eac-9d06-a5337b8147c4",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|English 2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "English 3",
+    "courseId": "7c9bd937-112e-4d98-895a-2573b5d9176d",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|English 3 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "English 4",
+    "courseId": "56cdb1bc-00c6-4a80-9337-92bd3b31f245",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|English 4 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Freshman English",
+    "courseId": "5f27215a-b56d-47f7-9abe-cd34c1a554a8",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Freshman English (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Freshman English",
+    "courseId": "24a49f59-1af8-43c9-8744-5276d7f6a97f",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Freshman Eng (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Sophomore English",
+    "courseId": "074c60a7-56fc-46f1-a5b3-c441e1457d6b",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Soph English (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Junior English",
+    "courseId": "e870533b-4482-4d9d-8bd8-5f37daac2aa9",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Junior English (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Lit. & Dynamics of Soc. Justice",
+    "courseId": "50cd1f8c-f26b-4612-b176-c612361135af",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Lit &amp; Soc Justice (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Sheltered English",
+    "courseId": "8b455dae-9e0a-42af-90c7-5cd9236e3356",
+    "disciplineName": "English as a Second Language (ESL) / English Language Development (ELD)",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Sheltered English (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Sophomore English",
+    "courseId": "1117bf6e-683a-4210-81e8-37d54cff6a56",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Sophomore English (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "World Literature",
+    "courseId": "ecb89c0c-869e-4895-ac1b-e28951ff9d9b",
+    "disciplineName": "English",
+    "subjectAreaCode": "b",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Adv Comp/Wrld Lit (P)|World Literature (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "2-Year Algebra I",
+    "courseId": "0cc4e666-7e1a-4b39-ad7b-c9391807850e",
+    "disciplineName": "Algebra I",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|2-Year Algebra 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Two Years",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Algebra I",
+    "courseId": "8d0cb2d9-fe76-45b8-bcd5-b453d883789f",
+    "disciplineName": "Algebra I",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Algebra I (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Algebra II",
+    "courseId": "c6fff333-6580-490a-b454-28c0b68a8142",
+    "disciplineName": "Algebra II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Algebra II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Algebra II-Precalculus:  Course 2",
+    "courseId": "9720c281-0639-4680-8ac1-47013c92baf7",
+    "disciplineName": "Other Advanced Mathematics",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Alg II-PreCal: Crse 2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP Calculus AB",
+    "courseId": "d79f2d4d-a7bb-46ee-ae09-4bda1b0e5ad9",
+    "disciplineName": "Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Calculus AB (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Calculus BC",
+    "courseId": "91a326ec-eb70-481a-919e-eee8442b76c2",
+    "disciplineName": "Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Calculus BC (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Computer Science A",
+    "courseId": "8b60d1f8-b803-4176-9a8c-3b986075bc0d",
+    "disciplineName": "Computer Science",
+    "subjectAreaCode": "c",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Computer Science A (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Statistics",
+    "courseId": "64c6faf9-0b19-4dae-be58-aea6b0465c47",
+    "disciplineName": "Statistics",
+    "subjectAreaCode": "c",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Statistics (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "Calculus",
+    "courseId": "9767fbf8-2a3f-47fa-976f-d811ddebf8b1",
+    "disciplineName": "Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Calculus (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Geometry",
+    "courseId": "f3a66039-3979-4201-8f39-cf5569672bba",
+    "disciplineName": "Geometry",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Geometry (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Geometry - Algebra II:  Course 1",
+    "courseId": "2798da12-78e9-49c1-af91-71a9efd56178",
+    "disciplineName": "Mathematics II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Geom-Alg II: Crse 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Algebra II",
+    "courseId": "e34b5f60-0fdb-4ae3-8d71-cd0d9184c308",
+    "disciplineName": "Algebra II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Algebra II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Geometry",
+    "courseId": "6ac81ce3-d5e5-4915-9519-5db6eafedf18",
+    "disciplineName": "Geometry",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Geometry (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Pre-Calculus",
+    "courseId": "6b3471da-4645-491b-ac8d-d486297f43bc",
+    "disciplineName": "Pre-Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Pre-Calculus (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Math II",
+    "courseId": "f131dbc0-7f1b-43fb-9b4e-e151b4580fb3",
+    "disciplineName": "Mathematics II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Math II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Math III",
+    "courseId": "e8bd0ba2-b356-43ef-b33d-51d1e79c569e",
+    "disciplineName": "Algebra II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Math III (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Math IV",
+    "courseId": "464bb10c-969b-4a44-82ec-9bd1f3010e96",
+    "disciplineName": "Algebra II",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Math IV (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Multivariable Calculus",
+    "courseId": "dc9f868c-77b3-47ed-b271-c3a1b0abb4b4",
+    "disciplineName": "Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Multivariable Calculus (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Pre-Calculus",
+    "courseId": "b7ad812d-aeaa-45e2-a834-70724b506ff6",
+    "disciplineName": "Pre-Calculus",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Pre-Calculus (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Anatomy & Physiology",
+    "courseId": "4118bd49-ab84-4b44-aeb2-5455424302e9",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Anat/Physiology (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP Biology",
+    "courseId": "4e20cd0b-e526-41a9-b148-a557903864c6",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Biology (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Chemistry",
+    "courseId": "7ebb42dd-9370-4787-bdb1-9f948833d1a6",
+    "disciplineName": "Chemistry",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Chemistry (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Environmental Science",
+    "courseId": "efcb692e-09cc-4cc6-853b-8ee19b95abf4",
+    "disciplineName": "Interdisciplinary Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Env Sci (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Physics C: Electricity and Magnetism",
+    "courseId": "d9cc7c49-4d9f-4906-9114-a5ab7644ec06",
+    "disciplineName": "Physics",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Phys C: Elec &amp; Mag (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Physics C: Mechanics",
+    "courseId": "9ac142b7-d10e-4c1f-b8ec-0287cf089150",
+    "disciplineName": "Physics",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Phys C: Mechanics (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "Biology",
+    "courseId": "8d0ab947-b9db-45c4-ab35-d17473c8ea47",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Biology (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Chemistry",
+    "courseId": "c8a1c3db-15e2-49c3-a47f-ecc03c905295",
+    "disciplineName": "Chemistry",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Chemistry (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Earth & Space Science",
+    "courseId": "b59c95a3-bb5e-487a-a0c1-ba72a188378e",
+    "disciplineName": "Earth and Space Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Earth &amp; Space Science (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors  PLTW Civil Engineering and Architecture",
+    "courseId": "1b56c7f2-7d03-4ea3-b6c3-1bf593e67f9f",
+    "disciplineName": "Engineering",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Civil Eng &amp; Arch (PLTW) (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors  PLTW Medical Interventions",
+    "courseId": "3f07cf37-074c-4645-9b6a-265a894fd8f7",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Medical Intrv (PLTW) (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors  PLTW Principles of Engineering",
+    "courseId": "4a2ca982-2653-4029-931d-d3a90de4d5e8",
+    "disciplineName": "Engineering",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Princ of Engnr (PLTW) (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors PLTW Computer Integrated Manufacturing",
+    "courseId": "2041a132-6ebe-4b33-988c-d0bf6b720af8",
+    "disciplineName": "Engineering",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Honors PLTW CIMS (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors PLTW Human Body Systems",
+    "courseId": "7e7c8a98-b9a1-4356-9952-c643931aef66",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Human Body Sys (PLTW)(HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Physics",
+    "courseId": "444fcc7f-6463-45fa-a042-e9fd74a034ba",
+    "disciplineName": "Physics",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Physics (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "PLTW Computer Science Principles",
+    "courseId": "8f9ce0e2-cf87-4c51-88e9-2a5afdf4533a",
+    "disciplineName": "Computer Science",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Comp Sci Principles (PLTW)(P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "PLTW Introduction to Engineering Design",
+    "courseId": "7c3a26a8-7185-4a0b-8cee-8075bccb0056",
+    "disciplineName": "Engineering",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Intro to Eng Des (PLTW) (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "PLTW Principles of Biomedical Science",
+    "courseId": "ec4c8755-ee40-4ba9-94ef-34d9bdf48d67",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Princ of Biomed Sci (PLTW) (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "PLTW Principles of Engineering",
+    "courseId": "938dc3e6-fb5d-4276-9edf-d64bbcab0c3b",
+    "disciplineName": "Engineering",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Princ of Engineering (PLTW) (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Zoology",
+    "courseId": "a730c0f5-14f0-499f-a365-dfec41297701",
+    "disciplineName": "Biology / Life Sciences",
+    "subjectAreaCode": "d",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Zoology (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "American Sign Language I",
+    "courseId": "bf5b737c-9e5e-4ca2-a769-3fa6043fd8a2",
+    "disciplineName": "LOTE Level 1",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Am Sign Lang I (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "American Sign Language II",
+    "courseId": "ba3353af-551e-4ea1-96e2-7e538d85d9d8",
+    "disciplineName": "LOTE Level 2",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Am Sign Lang II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "American Sign Language III",
+    "courseId": "2447f517-5386-49a2-895c-fa0b9712c900",
+    "disciplineName": "LOTE Level 3",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Am Sign Lang III (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "American Sign Language IV",
+    "courseId": "0dbaa6a5-c981-4ad0-a410-5912b4644bec",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Am Sign Lang IV (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP French Language and Culture",
+    "courseId": "25cdfb77-08ac-480d-bbf3-3e4d1cfb2fac",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP French Lang/Culture (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Japanese Language and Culture",
+    "courseId": "92c096c2-abe8-4b3e-8925-1a49e46f5df2",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Japanese Lang/Culture (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Spanish Language and Culture",
+    "courseId": "025e3f80-f226-41dc-8c65-0028e1e10256",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Spanish Lang/Culture (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Spanish Literature and Culture",
+    "courseId": "3287d3d0-04b4-46b3-8ff4-728130eef4b1",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Spanish Lit/Culture (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "French I",
+    "courseId": "09a2d207-a02a-4e06-a782-3f079fa66e6d",
+    "disciplineName": "LOTE Level 1",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "French I (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "French II",
+    "courseId": "6ea367dc-ab9d-4674-888b-794c22e51fa7",
+    "disciplineName": "LOTE Level 2",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "French II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "French III",
+    "courseId": "22c9672c-ed4a-4a2a-93bf-efe347dc6963",
+    "disciplineName": "LOTE Level 3",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "French III (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors French V",
+    "courseId": "354c8d02-1492-4077-9448-7a285e0cb478",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon French V (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors Japanese V",
+    "courseId": "511cfc76-1371-46d3-a48c-c82f5241044b",
+    "disciplineName": "LOTE Level 4+",
+    "subjectAreaCode": "e",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "Hon Japanese V (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Japanese I",
+    "courseId": "c64ca269-285f-41f6-916c-9c9009787020",
+    "disciplineName": "LOTE Level 1",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Japanese I (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Japanese II",
+    "courseId": "dc51ce99-a964-4020-b107-0cfbb6f64537",
+    "disciplineName": "LOTE Level 2",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Japanese II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Japanese III",
+    "courseId": "ee2bd9c2-a2db-4fc6-99c8-fa1bc5dacb85",
+    "disciplineName": "LOTE Level 3",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Japanese III (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Spanish I",
+    "courseId": "30178721-3104-4fe7-9b12-d6943e6bf6dd",
+    "disciplineName": "LOTE Level 1",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Spanish I (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Spanish II",
+    "courseId": "49f36980-ac88-4c78-ad68-6651a0398967",
+    "disciplineName": "LOTE Level 2",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Spanish II (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Spanish III",
+    "courseId": "1d369581-5228-41ac-838b-9fa494016e32",
+    "disciplineName": "LOTE Level 3",
+    "subjectAreaCode": "e",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Spanish III (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced Drama",
+    "courseId": "f61f6190-b377-4f31-9ac6-3fb28b8ecf99",
+    "disciplineName": "Theater",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Advanced Drama (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Animation and Motion Graphics 1",
+    "courseId": "801949be-f4bb-451e-aecf-c8de70cc7d0f",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Anim &amp; Motion Graph I (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP 2D Art and Design",
+    "courseId": "29deddd4-4d99-4fd5-8291-6b42de199bbc",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP 2D Art and Design (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Drawing",
+    "courseId": "0291aeea-e871-4d2c-8c90-f2cf82cadbe4",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Drawing (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Music Theory",
+    "courseId": "f77a47f0-dec7-4e67-ba24-cd697fa82dcf",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Music Theory (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "Art 1",
+    "courseId": "1c156986-b759-49d7-8a97-5644a39adb42",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Art 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Art 2",
+    "courseId": "2844cb79-f7e3-4345-9e68-0781faf942ba",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Art 2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Ceramics 1",
+    "courseId": "26cd9dd2-0fa6-4521-b3b2-380b6dd8564f",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Ceramics 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Ceramics 2",
+    "courseId": "d61aa9fa-4251-4fca-bd87-c76269529362",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Ceramics 2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Ceramics 3",
+    "courseId": "4bafebbc-b3dc-49a1-8f2c-5d3fb3f52366",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Ceramics 3 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Color Guard",
+    "courseId": "a904ea35-23a2-48f3-b8a9-f03ebd644b2f",
+    "disciplineName": "Dance",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Color Guard (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Concert Band/Brass/Woodwinds",
+    "courseId": "aa322df5-6cd3-4e1b-a37f-0879707b13c2",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Concert Band (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Concert Choir",
+    "courseId": "215052ff-8991-414f-b523-fe963756027e",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Concert Choir (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Digital Art",
+    "courseId": "5c043610-e50d-4bc6-8ef0-5233a54e17f6",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Digital Art (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Drama 1",
+    "courseId": "4aa1a969-f4df-42ba-bf92-dfa669a5d08c",
+    "disciplineName": "Theater",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Drama 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Drama 2 - Intermediate",
+    "courseId": "5489e590-24cc-4161-bf70-3ee766d5c8f1",
+    "disciplineName": "Theater",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Drama 2 - Inter (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Choir",
+    "courseId": "bd80c403-4082-43d1-a065-0042d40c2771",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Honors Choir (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors Jazz Band",
+    "courseId": "365f1724-eb0a-47d9-9330-8ba67b84a046",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Hon Jazz Band (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors Orchestra",
+    "courseId": "a5225b70-8b2a-47e0-ac1c-429b907a0257",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Hon Orchestra (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Honors Wind Ensemble",
+    "courseId": "b517e71f-fc8c-43f5-94fe-9312316cdcd3",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Hon Wind Ensemble (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Photography 1",
+    "courseId": "cd6ecfd8-71fe-420e-9804-198b05123348",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Photography 1 (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Photography 2",
+    "courseId": "19b0166d-1cb5-431b-8787-b0e20e3ab19f",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Photography 2 (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "String Orchestra",
+    "courseId": "b73ecd52-6bfc-442f-a6df-a8763db6cfa7",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "String Orchestra (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Symphonic Band",
+    "courseId": "2804bdd1-c5f1-4b5e-b0ba-1ef5c80d6f64",
+    "disciplineName": "Music",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Symphonic Band (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Theatre Production",
+    "courseId": "eb020da1-866e-4e44-9b69-96672bf998f8",
+    "disciplineName": "Theater",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Theatre Prod (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Video Game Art and Design",
+    "courseId": "57c2ce86-e757-4ef2-b17c-8f29f7f49724",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Video Game Art and Design (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Video Production 1",
+    "courseId": "54d4a14f-00e9-4260-bcec-be3cfa943dfc",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Video Prod 1 (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Video Production 2",
+    "courseId": "4792cc0b-02b5-44f5-b26f-4b5e466f1703",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Video Prod 2 (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Video Production 3",
+    "courseId": "92f057f3-5894-4c23-8a5c-913011fc2279",
+    "disciplineName": "Visual Arts",
+    "subjectAreaCode": "f",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Video Prod 3 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced Computer Science for the Contemporary World",
+    "courseId": "87254439-d130-4839-a48b-2a50e36fade7",
+    "disciplineName": "Mathematics - Computer Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Advanced Computer Science (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced ELD 3-4",
+    "courseId": "3d466fc2-c6e5-43e0-9db8-5f79ec05dbad",
+    "disciplineName": "English as a Second Language (ESL) / English Language Development (ELD)",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Advanced ELD 3-4 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced Journalism",
+    "courseId": "f018b921-ee91-4005-b354-9c250e4488e4",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Advanced Journalism (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Advanced Publications/Yearbook",
+    "courseId": "6384e1ec-8e76-4a18-880f-33b40d4b290c",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Adv Publications/Yearbook (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AP Macroeconomics",
+    "courseId": "ff0f87cb-c41a-4f3a-8675-418641e3777a",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Macroecon (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AP Psychology",
+    "courseId": "16e47c7d-8f47-42fa-bb3f-74d7dbce855f",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "AP Psychology (HP)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "AP"
+  },
+  {
+    "title": "AVID 10",
+    "courseId": "22b0b7ef-8267-4400-b2d0-8a9e196dec20",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Avid 10 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AVID 11",
+    "courseId": "144c485f-cb5b-40b5-8314-08a16efb4788",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Avid 11 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AVID 12",
+    "courseId": "a6c3925a-6557-4c9e-840f-b8feddeea78d",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Avid 12 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "AVID 9",
+    "courseId": "e77e29bb-551b-41e1-a22d-b718b2b87d42",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Avid 9 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Baking and Pastry",
+    "courseId": "8530405d-6052-40fa-b77b-2e9ab0ea5746",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Baking and Pastry (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Child Growth and Development",
+    "courseId": "fe9571a3-fb0a-43bc-a2b8-3ff56ae9c68a",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Child Grow/Dev (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Culinary Skills",
+    "courseId": "068c88d4-5ce1-478e-b32c-84754ef1cc57",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Culinary Skills (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Cybersecurity",
+    "courseId": "2294e9a3-640d-4124-8a11-f404dffedb5f",
+    "disciplineName": "Mathematics - Computer Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Cybersecurity (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Debate 1",
+    "courseId": "3cd1e641-5fc9-4875-a5ea-8323ce5aa722",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Debate 1 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Debate 2",
+    "courseId": "dc5db413-b71f-423e-af59-62fd82c5850d",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Debate 2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Debate 3",
+    "courseId": "5afeaded-a657-4bed-b498-81b0f4dc5206",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Debate 3 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Debate 4",
+    "courseId": "33f0c3a0-e15c-4a9e-be97-8527f4636074",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Debate 4 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Developmental Psy. Of Children ",
+    "courseId": "57958328-333d-4bef-9cb4-2dd20c91eda2",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Devel Psych of Children I - A (P)|Devel Psych of Children I - B (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Economics",
+    "courseId": "d55f1c02-5eb5-4e89-a07a-0c9ba8ff2ba1",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Economics (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Economics of Bus. Ownership ",
+    "courseId": "dddd62a1-c554-48a4-bec7-771292794263",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Econ of Bus (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "English Language Development Support 1-2",
+    "courseId": "311ee924-1277-41ae-9a1e-d8a9a8d8f36b",
+    "disciplineName": "English as a Second Language (ESL) / English Language Development (ELD)",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "ELD Support 1-2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "General Work Experience",
+    "courseId": "45a7f541-7099-48ee-a912-53e81144411a",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "General Work Experience (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Health Education",
+    "courseId": "457d70b4-2217-4a23-8c7d-d6433b6bc4d9",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Health Education (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11"
+    ],
+    "courseLength": "Half Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Honors Culinary and Catering",
+    "courseId": "2af6c1a2-b2a7-42ad-a229-e7c7d02f9d5e",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Honors Culinary (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Integrated Marketing Communications ",
+    "courseId": "23b055d2-aa3a-4829-9982-4389832a1b6d",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Integrated Marketing Comm (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Introduction to Criminal Justice",
+    "courseId": "df549dfb-18f0-4736-a87e-64cd087d5fcd",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Intro to Criminal Justice (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Journalism 1-2",
+    "courseId": "63f16980-f2f1-4743-ab3f-d4edbdba5725",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Journalism 1-2 (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Medical Occupations",
+    "courseId": "8a1662ec-e74b-4718-a73d-21ca7c513f26",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Medical Occupations A (P)|Medical Occupations B (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Two Years",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Nursing Careers",
+    "courseId": "78b8a5d8-b3f2-4d6f-a882-cf6a09fb08d4",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Nursing Careers A (P)|Nursing Careers B (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Publications/Yearbook",
+    "courseId": "a18f4a96-fdf7-4573-9b1e-3246793c7ae8",
+    "disciplineName": "English",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Publications/ Yearbook (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "ROP Advanced Auto Body Repair",
+    "courseId": "2cd28b6d-be38-4647-a015-d484505a750d",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Advanced Auto Body Repair (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "ROP Auto Body Repair",
+    "courseId": "94bea1c5-31df-48ef-8c09-27117ee709e0",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Auto Body Repair (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "ROP Automotive Technology",
+    "courseId": "18d622d8-9324-401c-bf25-e675ca3555a8",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Auto Technology A (P)|Auto Technology B (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "ROP Criminal Justice Academy",
+    "courseId": "d20b647f-cb16-496f-9851-f7c14bc5e0bf",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 1,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Criminal Justice Academy - A (HP)|Criminal Justice Academy - B (HP)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "Honors"
+  },
+  {
+    "title": "Sports and Entertainment Marketing ",
+    "courseId": "09288cc6-f160-4cfa-b202-683a0a1881df",
+    "disciplineName": "History / Social Science",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Sports &amp; Ent Mkt (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Sports Medicine II ",
+    "courseId": "05490aba-630f-40e7-afcd-571d53fa7473",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Sports Medicine II (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Sports Medicine-Athletic Trainer ",
+    "courseId": "d7f3334b-19ed-4100-b6a9-5d4056d96678",
+    "disciplineName": "Science \u2013 Biology / Life Sciences",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Sports Med/Athletic Trainer (P)",
+    "isCte": true,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  },
+  {
+    "title": "Student Leadership",
+    "courseId": "438eb042-3108-43a6-b586-1ada94f85f6f",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Student Leadership (P)",
+    "isCte": false,
+    "isClassroomBased": true,
+    "gradeLevels": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "courseLength": "Full Year",
+    "honorsTypeName": "None"
+  }
+]
