@@ -82,5 +82,5 @@ if __name__== "__main__":
                        2751 # Dublin High School
                        ]
 
-    for id in INSTITUTION_IDS:
-        get_compiled_course_info(id)
+    for id_ in INSTITUTION_IDS:
+        get_compiled_course_info(id_)
