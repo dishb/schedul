@@ -1,8 +1,11 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
+import { AuthProvider } from "@/components/AuthContext";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  description: "The premier biology competition for high schoolers.",
+  title: "",
+  description: "",
 };
 
 export default function RootLayout({
@@ -13,7 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen">
-        <main>{children}</main>
+        <AuthProvider>
+          <main>{children}</main>
+        </AuthProvider>
+
+        <Toaster closeButton />
       </body>
     </html>
   );
