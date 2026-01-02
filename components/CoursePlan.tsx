@@ -5,12 +5,16 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  CardFooter,
   CardDescription,
   CardAction,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Check, Save, Maximize2, Minimize2 } from "lucide-react";
+import {
+  Check,
+  Maximize2,
+  Minimize2,
+  OctagonAlert,
+  TriangleAlert,
+} from "lucide-react";
 import { useState } from "react";
 import Course from "@/components/Course";
 import type CoursePlanProps from "@/types/CoursePlanProps";
@@ -18,13 +22,35 @@ import type CoursePlanProps from "@/types/CoursePlanProps";
 export default function CoursePlan({ gradeLevel, courses }: CoursePlanProps) {
   const [expanded, setExpanded] = useState(true);
 
+  const totalCredits = courses.reduce((sum, course) => {
+    return sum + course.credits;
+  }, 0);
+
+  let cardDescription = (
+    <CardDescription className="flex gap-1 text-green-500 items-center">
+      <Check size={18} /> {totalCredits} credits
+    </CardDescription>
+  );
+
+  if (totalCredits == 0) {
+    cardDescription = (
+      <CardDescription className="flex gap-1 text-red-500 items-center">
+        <OctagonAlert size={18} /> {totalCredits} credits
+      </CardDescription>
+    );
+  } else if (totalCredits < 60) {
+    cardDescription = (
+      <CardDescription className="flex gap-1 text-yellow-500 items-center">
+        <TriangleAlert size={18} /> {totalCredits} credits
+      </CardDescription>
+    );
+  }
+
   return (
     <Card className="flex-1 max-w-90">
       <CardHeader>
         <CardTitle>{gradeLevel}th grade</CardTitle>
-        <CardDescription className="flex gap-1 text-green-500 items-center">
-          <Check size={18} /> 60 credits
-        </CardDescription>
+        {cardDescription}
         <CardAction
           className="hover:cursor-pointer"
           onClick={() => {
@@ -34,26 +60,13 @@ export default function CoursePlan({ gradeLevel, courses }: CoursePlanProps) {
           {expanded ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
         </CardAction>
       </CardHeader>
-      {expanded && (
-        <CardContent className="flex flex-col gap-2">
-          {courses.map((course, index) => {
-            return (
-              <Course
-                key={index}
-                title={course.title}
-                credits={course.credits}
-              />
-            );
-          })}
-        </CardContent>
-      )}
-      {expanded && (
-        <CardFooter>
-          <Button className="w-full" variant="secondary">
-            <Save /> Save
-          </Button>
-        </CardFooter>
-      )}
+      <CardContent className={`flex flex-col gap-2 ${!expanded && "hidden"}`}>
+        {courses.map((course, index) => {
+          return (
+            <Course key={index} title={course.title} credits={course.credits} />
+          );
+        })}
+      </CardContent>
     </Card>
   );
 }
