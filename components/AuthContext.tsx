@@ -10,7 +10,7 @@ import {
   type AuthError,
 } from "firebase/auth";
 import { auth, db } from "@/lib/firebase";
-import { doc, setDoc } from "firebase/firestore";
+import { doc, setDoc, addDoc, collection } from "firebase/firestore";
 import type AuthContextType from "@/types/AuthContextType";
 import { getAuthErrorMessage } from "@/lib/utils";
 import type SignUpData from "@/types/SignUpData";
@@ -72,6 +72,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           firstName: data.firstName,
           lastName: data.lastName,
           email: data.email,
+          createdAt: new Date().toISOString(),
+        });
+
+        await addDoc(collection(db, "coursePlans"), {
+          user: user.uid,
+          ninth: [],
+          tenth: [],
+          eleventh: [],
+          twelfth: [],
           createdAt: new Date().toISOString(),
         });
       } catch (firestoreError) {

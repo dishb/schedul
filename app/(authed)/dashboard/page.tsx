@@ -1,130 +1,83 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { collection, getDocs, limit, query, where } from "firebase/firestore";
 import CoursePlan from "@/components/CoursePlan";
 import type CourseProps from "@/types/CourseProps";
+import useAuth from "@/hooks/useAuth";
+import { db } from "@/lib/firebase";
 
-const freshmanCourses: CourseProps[] = [
-  {
-    title: "Honors Algebra 2",
-    credits: 10,
-  },
-  {
-    title: "Physical Education",
-    credits: 10,
-  },
-  {
-    title: "Biology",
-    credits: 10,
-  },
-  {
-    title: "Spanish 2",
-    credits: 10,
-  },
-  {
-    title: "Health Education",
-    credits: 5,
-  },
-  {
-    title: "Global Studies",
-    credits: 5,
-  },
-  {
-    title: "Freshman English",
-    credits: 10,
-  },
-];
+type CoursePlansState = {
+  ninth: CourseProps[];
+  tenth: CourseProps[];
+  eleventh: CourseProps[];
+  twelfth: CourseProps[];
+};
 
-const sophomoreCourses: CourseProps[] = [
-  {
-    title: "AP World History",
-    credits: 10,
-  },
-  {
-    title: "AP Computer Science A",
-    credits: 10,
-  },
-  {
-    title: "Honors Pre-Calculus",
-    credits: 10,
-  },
-  {
-    title: "Chemistry",
-    credits: 10,
-  },
-  {
-    title: "Sophomore English",
-    credits: 10,
-  },
-  {
-    title: "Digital Art",
-    credits: 10,
-  },
-];
-
-const juniorCourses: CourseProps[] = [
-  {
-    title: "AP Statistics",
-    credits: 10,
-  },
-  {
-    title: "AP Biology",
-    credits: 10,
-  },
-  {
-    title: "Physics",
-    credits: 10,
-  },
-  {
-    title: "Junior English",
-    credits: 10,
-  },
-  {
-    title: "AP Calculus BC",
-    credits: 10,
-  },
-  {
-    title: "AP Pyschology",
-    credits: 10,
-  },
-];
-
-const seniorCourses: CourseProps[] = [
-  {
-    title: "AP US Government",
-    credits: 5,
-  },
-  {
-    title: "AP Macroeconomics",
-    credits: 5,
-  },
-  {
-    title: "Expository Writing and Reading",
-    credits: 10,
-  },
-  {
-    title: "Cybersecurity",
-    credits: 10,
-  },
-  {
-    title: "Advanced Computer Science",
-    credits: 10,
-  },
-  {
-    title: "Multivariable Calculus",
-    credits: 10,
-  },
-  {
-    title: "AP Environmental Science",
-    credits: 10,
-  },
-];
+const initialState: CoursePlansState = {
+  ninth: [],
+  tenth: [],
+  eleventh: [],
+  twelfth: [],
+};
 
 export default function Page() {
+  const { user, loading: authLoading } = useAuth();
+  const [coursePlans, setCoursePlans] = useState<CoursePlansState>(initialState);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (authLoading || !user) return;
+
+    let cancelled = false;
+
+    async function fetchCoursePlans() {
+      setLoading(true);
+
+      try {
+        const q = query(
+          collection(db, "coursePlans"),
+          where("user", "==", user?.uid),
+          limit(1)
+        );
+
+        const snapshot = await getDocs(q);
+
+        if (!snapshot.empty && !cancelled) {
+          const data = snapshot.docs[0].data();
+
+          setCoursePlans({
+            ninth: data.ninth ?? [],
+            tenth: data.tenth ?? [],
+            eleventh: data.eleventh ?? [],
+            twelfth: data.twelfth ?? [],
+          });
+        }
+      } catch (err) {
+        console.error("Failed to load course plans", err);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    fetchCoursePlans();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [authLoading, user]);
+
+  if (authLoading || loading) {
+    return null;
+  }
+
   return (
     <div className="w-full h-screen flex justify-center items-center">
       <div className="w-full flex justify-evenly items-start">
-        <CoursePlan gradeLevel={9} courses={freshmanCourses} />
-        <CoursePlan gradeLevel={10} courses={sophomoreCourses} />
-        <CoursePlan gradeLevel={11} courses={juniorCourses} />
-        <CoursePlan gradeLevel={12} courses={seniorCourses} />
+        <CoursePlan gradeLevel={9} courses={coursePlans["ninth"]} />
+        <CoursePlan gradeLevel={10} courses={coursePlans["tenth"]} />
+        <CoursePlan gradeLevel={11} courses={coursePlans["eleventh"]} />
+        <CoursePlan gradeLevel={12} courses={coursePlans["twelfth"]} />
       </div>
     </div>
   );
