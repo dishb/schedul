@@ -57,14 +57,13 @@ def seed_school_courses(institution_id: int) -> None:
             change_counter = 0
 
         course_ref = school_ref.collection("courses").document(course["courseId"])
-
         course_with_timestamps = {**course,
                                   "institutionId": institution_id,
                                   "updatedAt": SERVER_TIMESTAMP,
                                   "createdAt": SERVER_TIMESTAMP
                                   }
 
-        batches[current_batch].set(course_ref, course_with_timestamps, merge=True)
+        batches[current_batch].set(course_ref, course_with_timestamps, merge = True)
         change_counter += 1
 
     for batch in batches:
