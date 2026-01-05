@@ -12,31 +12,56 @@ from firebase_admin import credentials, firestore
 import firebase_admin
 
 load_dotenv()
-credential_path = getenv("FIREBASE_ADMIN_PATH")
-if credential_path == "" or not credential_path:
+CREDENTIAL_PATH = getenv("FIREBASE_ADMIN_PATH")
+if CREDENTIAL_PATH == "" or not CREDENTIAL_PATH:
     raise EnvironmentError("Missing required environment variable: FIREBASE_ADMIN_PATH")
-CRED = credentials.Certificate(credential_path)
+
+CRED = credentials.Certificate(CREDENTIAL_PATH)
+COURSE_FILES = Path(__file__).parent / "courses"
 
 firebase_admin.initialize_app(CRED)
 db = firestore.client()
 
-COURSE_FILE = Path(__file__).parent / "courses" / "2754.json" # Amador Valley High School
-courses = []
-with open(COURSE_FILE, encoding = "utf-8") as course_file:
-    courses = load(course_file)
+def seed_school_courses(institution_id: int) -> None:
+    """
+    Seeds Schedul's Firestore database with all of the course data generated from `get_courses.py`.
 
-change_counter = 499 # pylint: disable=invalid-name
-current_batch = -1 # pylint: disable=invalid-name
-batches = []
-for course in courses:
-    if change_counter == 499:
-        batches.append(db.batch())
-        current_batch += 1
-        change_counter = 0 # pylint: disable=invalid-name
+    Args:
+        institution_id (int): The 4-digit ID assigned to each school (aka institution) by the UC /
+        CSU system. This can be found in the URL of the course list.
+    """
 
-    ref = db.collection("courses").document()
-    batches[current_batch].set(ref, course)
-    change_counter += 1
+    courses = []
+    with open(COURSE_FILES / f"{institution_id}.json", encoding = "utf-8") as course_file:
+        courses = load(course_file)
 
-for batch in batches:
-    batch.commit()
+    change_counter = 499
+    current_batch = -1
+    batches = []
+
+    school_ref = db.collection("schools").document(str(institution_id))
+
+    for course in courses:
+        if change_counter == 499:
+            batches.append(db.batch())
+            current_batch += 1
+            change_counter = 0
+
+        course_ref = school_ref.collection("courses").document(course["courseId"])
+
+        batches[current_batch].set(course_ref, course)
+        change_counter += 1
+
+    for batch in batches:
+        batch.commit()
+
+
+if __name__ == "__main__":
+    INSTITUTION_IDS = [2754, # Amador Valley High School
+                       2755, # Foothil High School
+                       2751 # Dublin High School
+                       ]
+
+    for id_ in INSTITUTION_IDS:
+        seed_school_courses(id_)
+        print(f"Course data successfully seeded for institution {id_}.")

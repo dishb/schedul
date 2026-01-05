@@ -28,7 +28,7 @@ WANTED_KEYS = {"gradeLevels",
                "honorsTypeName"
                }
 
-def get_compiled_course_info(institution_id: int):
+def get_compiled_course_info(institution_id: int) -> None:
     """
     Gets detailed information on each course offered by a particular school including:
 
@@ -84,4 +84,4 @@ if __name__== "__main__":
 
     for id_ in INSTITUTION_IDS:
         get_compiled_course_info(id_)
-        print(f"Course data successfully saved institution {id_} in {SAVE_DIR_PATH}.")
+        print(f"Course data successfully saved for institution {id_} in {SAVE_DIR_PATH}.")
