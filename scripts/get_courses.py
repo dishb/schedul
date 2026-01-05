@@ -11,7 +11,7 @@ from os import remove
 
 from requests import get
 
-SAVE_DIR_PATH = Path(__file__).resolve().parent.parent / "data" / "courses"
+SAVE_DIR_PATH = Path(__file__).resolve().parent / "courses"
 ALLOWED_KEYS = {"title",
                 "subjectAreaCode",
                 "email",
@@ -84,3 +84,4 @@ if __name__== "__main__":
 
     for id_ in INSTITUTION_IDS:
         get_compiled_course_info(id_)
+        print(f"Course data successfully saved institution {id_} in {SAVE_DIR_PATH}.")
