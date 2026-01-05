@@ -33,14 +33,21 @@ def seed_school_courses(institution_id: int) -> None:
         CSU system. This can be found in the URL of the course list.
     """
 
-    with open(
-        COURSE_FILES / f"{institution_id}.json",
-        encoding="utf-8"
-    ) as course_file:
+    with open(COURSE_FILES / f"{institution_id}.json", encoding="utf-8") as course_file:
         courses = load(course_file)
+
+    institution_title = ""
+    match institution_id:
+        case 2754:
+            institution_title = "Amador Valley High School"
+        case 2755:
+            institution_title = "Foothil High School"
+        case 2751:
+            institution_title = "Dublin High School"
 
     school_ref = db.collection("schools").document(str(institution_id))
     school_ref.set({"institutionId": institution_id,
+                    "title": institution_title,
                     "updatedAt": SERVER_TIMESTAMP,
                     "createdAt": SERVER_TIMESTAMP},
                    merge = True
@@ -56,11 +63,21 @@ def seed_school_courses(institution_id: int) -> None:
             current_batch += 1
             change_counter = 0
 
+        course_credits = 0
+        match course["courseLength"]:
+            case "Full Year":
+                course_credits = 10
+            case "Half Year":
+                course_credits = 5
+            case "Two Years":
+                course_credits = 20
+
         course_ref = school_ref.collection("courses").document(course["courseId"])
         course_with_timestamps = {**course,
                                   "institutionId": institution_id,
                                   "updatedAt": SERVER_TIMESTAMP,
-                                  "createdAt": SERVER_TIMESTAMP
+                                  "createdAt": SERVER_TIMESTAMP,
+                                  "credits": course_credits
                                   }
 
         batches[current_batch].set(course_ref, course_with_timestamps, merge = True)
