@@ -39,17 +39,16 @@ def seed_school_courses(institution_id: int) -> None:
     ) as course_file:
         courses = load(course_file)
 
-    change_counter = 499
-    current_batch = -1
-    batches = []
-
     school_ref = db.collection("schools").document(str(institution_id))
-
     school_ref.set({"institutionId": institution_id,
                     "updatedAt": SERVER_TIMESTAMP,
                     "createdAt": SERVER_TIMESTAMP},
                    merge = True
                    )
+
+    change_counter = 499
+    current_batch = -1
+    batches = []
 
     for course in courses:
         if change_counter == 499:
