@@ -60,11 +60,10 @@ export default function LoginForm() {
   async function onSubmit(data: z.infer<typeof LoginFormSchema>) {
     setIsSubmitting(true);
     try {
-      await signIn(data.email, data.password);
+      await signIn(data);
       toast.success("Successfully signed in!");
 
       router.push("/dashboard");
-      router.refresh();
     } catch (error) {
       const errorMessage =
         error instanceof Error

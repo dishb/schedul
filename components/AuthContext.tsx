@@ -10,10 +10,11 @@ import {
   type AuthError,
 } from "firebase/auth";
 import { auth, db } from "@/lib/firebase";
-import { doc, setDoc, addDoc, collection } from "firebase/firestore";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import type AuthContextType from "@/types/AuthContextType";
 import { getAuthErrorMessage } from "@/lib/utils";
 import type SignUpData from "@/types/SignUpData";
+import type LoginData from "@/types/LoginData";
 
 export const AuthContext = createContext<AuthContextType | undefined>(
   undefined
@@ -39,9 +40,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => unsubscribe();
   }, []);
 
-  const signIn = async (email: string, password: string): Promise<void> => {
+  const signIn = async (data: LoginData): Promise<void> => {
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, data.email, data.password);
     } catch (error) {
       console.error("Firebase sign-in error:", error);
 
@@ -67,22 +68,50 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
       const user = userCredential.user;
 
+      let schoolId = 0;
+      switch (data.schoolTitle) {
+        case "Amador Valley High School":
+          schoolId = 2754;
+          break;
+        case "Foothill High School":
+          schoolId = 2755;
+          break;
+        case "Dublin High School":
+          schoolId = 2751;
+          break;
+      }
+
       try {
-        await setDoc(doc(db, "users", user.uid), {
+        const userDoc = doc(db, "users", user.uid);
+
+        await setDoc(userDoc, {
           firstName: data.firstName,
           lastName: data.lastName,
           email: data.email,
-          createdAt: new Date().toISOString(),
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+          schoolTitle: data.schoolTitle,
+          schoolId: schoolId,
+          userId: user.uid,
         });
 
-        await addDoc(collection(db, "coursePlans"), {
-          user: user.uid,
-          ninth: [],
-          tenth: [],
-          eleventh: [],
-          twelfth: [],
-          createdAt: new Date().toISOString(),
-        });
+        for (const gradeLevel of ["9", "10", "11", "12"]) {
+          const coursePlanRef = doc(
+            db,
+            "users",
+            user.uid,
+            "coursePlans",
+            gradeLevel
+          );
+
+          await setDoc(coursePlanRef, {
+            gradeLevel: Number(gradeLevel),
+            courses: [],
+            totalCredits: 0,
+            createdAt: serverTimestamp(),
+            updatedAt: serverTimestamp(),
+          });
+        }
       } catch (firestoreError) {
         console.error(
           "Failed to save user profile to Firestore:",
@@ -90,18 +119,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         );
       }
     } catch (error) {
-      console.error("Firebase sign-up error:", error);
-
       if (error && typeof error === "object" && "code" in error) {
         const authError = error as AuthError;
         console.error("Auth error code:", authError.code);
         console.error("Auth error message:", authError.message);
-        throw new Error(getAuthErrorMessage(authError.code));
+      } else {
+        const errorMessage =
+          error instanceof Error ? error.message : "An unknown error occurred.";
+        console.error(errorMessage);
       }
-
-      const errorMessage =
-        error instanceof Error ? error.message : "An unknown error occurred.";
-      throw new Error(errorMessage);
     }
   };
 

@@ -48,7 +48,6 @@ def seed_school_courses(institution_id: int) -> None:
     school_ref = db.collection("schools").document(str(institution_id))
     school_ref.set({"institutionId": institution_id,
                     "title": institution_title,
-                    "updatedAt": SERVER_TIMESTAMP,
                     "createdAt": SERVER_TIMESTAMP},
                    merge = True
                    )
@@ -75,7 +74,6 @@ def seed_school_courses(institution_id: int) -> None:
         course_ref = school_ref.collection("courses").document(course["courseId"])
         course_with_timestamps = {**course,
                                   "institutionId": institution_id,
-                                  "updatedAt": SERVER_TIMESTAMP,
                                   "createdAt": SERVER_TIMESTAMP,
                                   "credits": course_credits
                                   }

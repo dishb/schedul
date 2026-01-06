@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const JoinFormSchema = z.object({
+const SignUpFormSchema = z.object({
   email: z
     .email("Please enter a valid email address.")
     .min(1, "An email is required."),
@@ -10,6 +10,15 @@ const JoinFormSchema = z.object({
     .min(8, "Your password must be more than 8 characters."),
   firstName: z.string().min(1, "A first name is required."),
   lastName: z.string().min(1, "A last name is required."),
+  schoolTitle: z
+    .enum([
+      "Amador Valley High School",
+      "Dublin High School",
+      "Foothill High School",
+    ])
+    .refine((val) => val !== undefined, {
+      message: "Please select a school.",
+    }),
 });
 
-export default JoinFormSchema;
+export default SignUpFormSchema;

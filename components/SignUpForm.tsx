@@ -34,6 +34,8 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Spinner } from "@/components/ui/spinner";
 
 export default function SignUpForm() {
@@ -55,6 +57,7 @@ export default function SignUpForm() {
       password: "",
       firstName: "",
       lastName: "",
+      schoolTitle: "Amador Valley High School"
     },
     mode: "all",
   });
@@ -67,10 +70,10 @@ export default function SignUpForm() {
         password: data.password,
         firstName: data.firstName,
         lastName: data.lastName,
+        schoolTitle: data.schoolTitle,
       });
-      toast.success("Account created successfully! Welcome!");
+      toast.success("Account created successfully. Welcome to Schedul!");
       router.push("/dashboard");
-      router.refresh();
     } catch (error) {
       const errorMessage =
         error instanceof Error
@@ -209,6 +212,59 @@ export default function SignUpForm() {
                     aria-invalid={fieldState.invalid}
                     disabled={isSubmitting}
                   />
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
+              )}
+            />
+            <Controller
+              control={signUpForm.control}
+              name="schoolTitle"
+              render={({ field, fieldState }) => (
+                <Field>
+                  <FieldLabel>School</FieldLabel>
+                  <RadioGroup
+                    value={field.value ?? undefined}
+                    onValueChange={field.onChange}
+                  >
+                    <div className="flex gap-2">
+                      <RadioGroupItem
+                        value="Amador Valley High School"
+                        id="Amador Valley High School"
+                      />
+                      <Label
+                        htmlFor="Amador Valley High School"
+                        className="hover:cursor-pointer"
+                      >
+                        Amador Valley High School
+                      </Label>
+                    </div>
+                    <div className="flex gap-2">
+                      <RadioGroupItem
+                        value="Foothill High School"
+                        id="Foothill High School"
+                      />
+                      <Label
+                        htmlFor="Foothill High School"
+                        className="hover:cursor-pointer"
+                      >
+                        Foothill High School
+                      </Label>
+                    </div>
+                    <div className="flex gap-2">
+                      <RadioGroupItem
+                        value="Dublin High School"
+                        id="Dublin High School"
+                      />
+                      <Label
+                        htmlFor="Dublin High School"
+                        className="hover:cursor-pointer"
+                      >
+                        Dublin High School
+                      </Label>
+                    </div>
+                  </RadioGroup>
                   {fieldState.invalid && (
                     <FieldError errors={[fieldState.error]} />
                   )}
