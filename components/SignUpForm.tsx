@@ -57,7 +57,7 @@ export default function SignUpForm() {
       password: "",
       firstName: "",
       lastName: "",
-      schoolTitle: "Amador Valley High School"
+      schoolTitle: "Amador Valley High School",
     },
     mode: "all",
   });
@@ -120,6 +120,48 @@ export default function SignUpForm() {
         <form id="form" onSubmit={signUpForm.handleSubmit(onSubmit)}>
           <FieldGroup>
             <Controller
+              name="firstName"
+              control={signUpForm.control}
+              render={({ field, fieldState }) => (
+                <Field data-invalid={fieldState.invalid}>
+                  <FieldLabel>First name</FieldLabel>
+                  <Input
+                    {...field}
+                    id="form-firstName"
+                    type="text"
+                    autoComplete="given-name"
+                    placeholder="Enter first name"
+                    aria-invalid={fieldState.invalid}
+                    disabled={isSubmitting}
+                  />
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
+              )}
+            />
+            <Controller
+              name="lastName"
+              control={signUpForm.control}
+              render={({ field, fieldState }) => (
+                <Field data-invalid={fieldState.invalid}>
+                  <FieldLabel>Last name</FieldLabel>
+                  <Input
+                    {...field}
+                    id="form-lastName"
+                    type="text"
+                    autoComplete="family-name"
+                    placeholder="Enter last name"
+                    aria-invalid={fieldState.invalid}
+                    disabled={isSubmitting}
+                  />
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
+              )}
+            />
+            <Controller
               name="email"
               control={signUpForm.control}
               render={({ field, fieldState }) => (
@@ -173,48 +215,6 @@ export default function SignUpForm() {
                   <FieldDescription>
                     Must be at least 8 characters long.
                   </FieldDescription>
-                </Field>
-              )}
-            />
-            <Controller
-              name="firstName"
-              control={signUpForm.control}
-              render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel>First name</FieldLabel>
-                  <Input
-                    {...field}
-                    id="form-firstName"
-                    type="text"
-                    autoComplete="given-name"
-                    placeholder="Enter first name"
-                    aria-invalid={fieldState.invalid}
-                    disabled={isSubmitting}
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
-                </Field>
-              )}
-            />
-            <Controller
-              name="lastName"
-              control={signUpForm.control}
-              render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel>Last name</FieldLabel>
-                  <Input
-                    {...field}
-                    id="form-lastName"
-                    type="text"
-                    autoComplete="family-name"
-                    placeholder="Enter last name"
-                    aria-invalid={fieldState.invalid}
-                    disabled={isSubmitting}
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
                 </Field>
               )}
             />

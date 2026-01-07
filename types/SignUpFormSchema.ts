@@ -10,15 +10,11 @@ const SignUpFormSchema = z.object({
     .min(8, "Your password must be more than 8 characters."),
   firstName: z.string().min(1, "A first name is required."),
   lastName: z.string().min(1, "A last name is required."),
-  schoolTitle: z
-    .enum([
-      "Amador Valley High School",
-      "Dublin High School",
-      "Foothill High School",
-    ])
-    .refine((val) => val !== undefined, {
-      message: "Please select a school.",
-    }),
+  schoolTitle: z.enum([
+    "Amador Valley High School",
+    "Dublin High School",
+    "Foothill High School",
+  ]),
 });
 
 export default SignUpFormSchema;
