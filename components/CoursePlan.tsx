@@ -10,7 +10,15 @@ import {
   CardAction,
 } from "@/components/ui/card";
 import { useState, useEffect, useCallback } from "react";
-import { Minimize2, Maximize2, Plus, X, Save, Star } from "lucide-react";
+import {
+  Minimize2,
+  Maximize2,
+  Plus,
+  X,
+  Save,
+  Star,
+  Search,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Course from "@/components/Course";
 import {
@@ -39,6 +47,11 @@ import { useSchoolCourses } from "@/hooks/useSchoolCourses";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import type CoursePlanProps from "@/types/CoursePlanProps";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+} from "@/components/ui/input-group";
 
 export default function CoursePlan({
   userId,
@@ -49,6 +62,7 @@ export default function CoursePlan({
   const [coursePlan, setCoursePlan] = useState<CoursePlanDoc | null>(null);
   const [courses, setCourses] = useState<CourseDoc[]>([]);
   const [radioSelect, setRadioSelect] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const catalog = useSchoolCourses(schoolId);
 
   const isDisabled = (courseId: string) => selectedCourseIds.includes(courseId);
@@ -66,7 +80,7 @@ export default function CoursePlan({
     "users",
     userId,
     "coursePlans",
-    String(gradeLevel)
+    String(gradeLevel),
   );
 
   useEffect(() => {
@@ -91,14 +105,14 @@ export default function CoursePlan({
             courseId: courseSnap.id,
             ...(data as Omit<CourseDoc, "courseId">),
           };
-        })
+        }),
       );
 
       setCourses(resolvedCourses.filter(Boolean) as CourseDoc[]);
     });
 
     return () => unsubscribe();
-  }, [coursePlanRef]);
+  });
 
   const addCourse = useCallback(
     async (courseRef: DocumentReference) => {
@@ -121,7 +135,7 @@ export default function CoursePlan({
         });
       });
     },
-    [coursePlanRef]
+    [coursePlanRef],
   );
 
   const replaceCourse = useCallback(
@@ -152,7 +166,7 @@ export default function CoursePlan({
         });
       });
     },
-    [coursePlanRef]
+    [coursePlanRef],
   );
 
   const removeCourse = useCallback(
@@ -172,7 +186,7 @@ export default function CoursePlan({
         });
       });
     },
-    [coursePlanRef]
+    [coursePlanRef],
   );
 
   const selectedCourseIds = courses.map((course) => course.courseId);
@@ -225,36 +239,76 @@ export default function CoursePlan({
             course plan.
           </DialogDescription>
         </DialogHeader>
+        <div className="mb-2">
+          <div className="flex gap-2 items-center">
+            <InputGroup>
+              <InputGroupInput
+                placeholder="Search by course name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <InputGroupAddon align="inline-end">
+                <Search />
+              </InputGroupAddon>
+            </InputGroup>
+          </div>
+        </div>
+
         <ScrollArea className="h-100 border rounded-lg p-2">
           <RadioGroup value={radioSelect} onValueChange={setRadioSelect}>
-            {catalog.map((course) => {
-              const disabled = isDisabled(course.courseId);
+            {catalog
+              .filter((course) => {
+                if (!searchQuery) return true;
+                const q = searchQuery.toLowerCase();
+                return (
+                  course.title.toLowerCase().includes(q) ||
+                  course.courseId.toLowerCase().includes(q)
+                );
+              })
+              .map((course) => {
+                const disabled = isDisabled(course.courseId);
 
-              return (
-                <div key={course.courseId} className="flex gap-2 items-center">
-                  <RadioGroupItem
-                    value={course.courseId}
-                    id={course.courseId}
-                    disabled={disabled}
+                return (
+                  <div
+                    key={course.courseId}
+                    className="flex gap-2 items-center"
                   >
-                    {course.title} ({course.credits})
-                    {disabled && " - already added"}
-                  </RadioGroupItem>
-                  <div className="flex flex-col">
-                    <Label htmlFor={course.courseId}>{course.title}</Label>
-                    <p className="text-xs text-muted-foreground">
-                      {course.credits} credits
-                    </p>
+                    <RadioGroupItem
+                      value={course.courseId}
+                      id={course.courseId}
+                      disabled={disabled}
+                    >
+                      {course.title} ({course.credits})
+                      {disabled && " - already added"}
+                    </RadioGroupItem>
+                    <div className="flex flex-col">
+                      <Label htmlFor={course.courseId}>{course.title}</Label>
+                      <p className="text-xs text-muted-foreground">
+                        {course.credits} credits
+                      </p>
+                    </div>
+                    <div className="flex-1" />
+                    {course.isHonors ? (
+                      <Star className="text-yellow-500" size={16} />
+                    ) : (
+                      <></>
+                    )}
                   </div>
-                  <div className="flex-1" />
-                  {course.isHonors ? (
-                    <Star className="text-yellow-500" size={16} />
-                  ) : (
-                    <></>
-                  )}
-                </div>
+                );
+              })}
+
+            {catalog.filter((course) => {
+              if (!searchQuery) return false;
+              const q = searchQuery.toLowerCase();
+              return (
+                course.title.toLowerCase().includes(q) ||
+                course.courseId.toLowerCase().includes(q)
               );
-            })}
+            }).length === 0 && (
+              <p className="p-4 text-sm text-muted-foreground">
+                No courses found
+              </p>
+            )}
           </RadioGroup>
         </ScrollArea>
         <DialogFooter>
