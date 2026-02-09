@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type CourseDoc from "@/types/CourseDoc";
 
@@ -9,50 +9,57 @@ const catalogCache = new Map<string, CourseDoc[]>();
 const listenerCache = new Map<string, () => void>();
 const subscribers = new Map<string, Set<() => void>>();
 
-export function useSchoolCourses(schoolId: string) {
+export function useSchoolCourses(schoolId: string, gradeLevel: number) {
+  const key = `${schoolId}:${gradeLevel}`;
+
   const [courses, setCourses] = useState<CourseDoc[]>(() => {
-    return catalogCache.get(schoolId) ?? [];
+    return catalogCache.get(key) ?? [];
   });
 
   useEffect(() => {
-    if (!schoolId) return;
+    if (!schoolId || !gradeLevel) return;
 
     const notify = () => {
-      setCourses(catalogCache.get(schoolId) ?? []);
+      setCourses(catalogCache.get(key) ?? []);
     };
 
-    if (!subscribers.has(schoolId)) {
-      subscribers.set(schoolId, new Set());
+    if (!subscribers.has(key)) {
+      subscribers.set(key, new Set());
     }
-    subscribers.get(schoolId)!.add(notify);
+    subscribers.get(key)!.add(notify);
 
-    if (!listenerCache.has(schoolId)) {
-      const ref = collection(db, "schools", schoolId, "courses");
+    if (!listenerCache.has(key)) {
+      const coursesRef = collection(db, "schools", schoolId, "courses");
 
-      const unsubscribe = onSnapshot(ref, (snap) => {
+      const coursesQuery = query(
+        coursesRef,
+        where("gradeLevels", "array-contains", gradeLevel.toString()),
+      );
+
+      const unsubscribe = onSnapshot(coursesQuery, (snap) => {
         const data: CourseDoc[] = snap.docs.map((d) => ({
           id: d.id,
           ...(d.data() as Omit<CourseDoc, "id">),
         }));
 
-        catalogCache.set(schoolId, data);
-        subscribers.get(schoolId)?.forEach((fn) => fn());
+        catalogCache.set(key, data);
+        subscribers.get(key)?.forEach((fn) => fn());
       });
 
-      listenerCache.set(schoolId, unsubscribe);
+      listenerCache.set(key, unsubscribe);
     }
 
     return () => {
-      subscribers.get(schoolId)?.delete(notify);
+      subscribers.get(key)?.delete(notify);
 
-      if (subscribers.get(schoolId)?.size === 0) {
-        subscribers.delete(schoolId);
-        listenerCache.get(schoolId)?.();
-        listenerCache.delete(schoolId);
-        catalogCache.delete(schoolId);
+      if (subscribers.get(key)?.size === 0) {
+        subscribers.delete(key);
+        listenerCache.get(key)?.();
+        listenerCache.delete(key);
+        catalogCache.delete(key);
       }
     };
-  }, [schoolId]);
+  }, [schoolId, gradeLevel, key]);
 
   return courses;
 }

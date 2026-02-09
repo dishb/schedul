@@ -57,7 +57,7 @@ export default function CoursePlan({
   const [selectedCourses, setSelectedCourses] = useState<CourseDoc[]>([]);
   const [radioSelect, setRadioSelect] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
-  const catalog = useSchoolCourses(schoolId);
+  const catalog = useSchoolCourses(schoolId, gradeLevel);
   const coursePlanRef = doc(
     db,
     "users",
@@ -229,7 +229,12 @@ export default function CoursePlan({
           </ScrollArea>
           <DialogFooter>
             <DialogClose asChild>
-              <Button variant="secondary">
+              <Button
+                variant="secondary"
+                onClick={() => {
+                  setSearchQuery("");
+                }}
+              >
                 <X /> Cancel
               </Button>
             </DialogClose>

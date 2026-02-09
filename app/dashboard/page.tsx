@@ -10,20 +10,17 @@ import type UserDoc from "@/types/UserDoc";
 export default function Page() {
   const { user, loading: authLoading } = useAuth();
   const [userInfo, setUserInfo] = useState<UserDoc | null>(null);
-  const [loadingUser, setLoadingUser] = useState(true);
-
+  const [loading, setLoading] = useState(true);
   const gradeLevels = [9, 10, 11, 12];
 
   useEffect(() => {
     if (!authLoading && user) {
       getUserInformation(user.uid).then((data) => {
         setUserInfo(data);
-        setLoadingUser(false);
+        setLoading(false);
       });
     }
   }, [authLoading, user]);
-
-  const loading = authLoading || loadingUser;
 
   return (
     <div className="w-full flex flex-col pb-10">
