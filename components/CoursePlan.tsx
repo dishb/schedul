@@ -9,7 +9,7 @@ import {
   CardFooter,
   CardAction,
 } from "@/components/ui/card";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import {
   Minimize2,
   Maximize2,
@@ -31,14 +31,7 @@ import {
   DialogClose,
   DialogFooter,
 } from "@/components/ui/dialog";
-
-import {
-  doc,
-  getDoc,
-  onSnapshot,
-  runTransaction,
-  DocumentReference,
-} from "firebase/firestore";
+import { doc, getDoc, onSnapshot } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type CoursePlanDoc from "@/types/CoursePlanDoc";
@@ -52,6 +45,7 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
+import { addCourse, deleteCourse } from "@/lib/actions";
 
 export default function CoursePlan({
   userId,
@@ -60,270 +54,193 @@ export default function CoursePlan({
 }: CoursePlanProps) {
   const [expanded, setExpanded] = useState(true);
   const [coursePlan, setCoursePlan] = useState<CoursePlanDoc | null>(null);
-  const [courses, setCourses] = useState<CourseDoc[]>([]);
+  const [selectedCourses, setSelectedCourses] = useState<CourseDoc[]>([]);
   const [radioSelect, setRadioSelect] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const catalog = useSchoolCourses(schoolId);
-
-  const isDisabled = (courseId: string) => selectedCourseIds.includes(courseId);
-
-  const handleSelect = () => {
-    if (isDisabled(radioSelect) || radioSelect === "") return;
-
-    const ref = doc(db, "school", schoolId, "courses", radioSelect);
-    addCourse(ref);
-    setRadioSelect("");
-  };
-
   const coursePlanRef = doc(
     db,
     "users",
     userId,
     "coursePlans",
-    String(gradeLevel),
+    gradeLevel.toString(),
   );
+  const courseCredits = coursePlan?.totalCredits || 0;
+  const selectedCourseIds = selectedCourses.map((course) => course.courseId);
+
+  function handleSelect() {
+    if (selectedCourseIds.includes(radioSelect) || radioSelect === "") return;
+    const courseRef = doc(db, "schools", schoolId, "courses", radioSelect);
+
+    addCourse(coursePlanRef, courseRef);
+    setRadioSelect("");
+  }
+
+  function handleDelete(index: number) {
+    const courseRef = doc(
+      db,
+      "schools",
+      schoolId,
+      "courses",
+      selectedCourses[index].courseId,
+    );
+
+    deleteCourse(coursePlanRef, courseRef);
+  }
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(coursePlanRef, async (snap) => {
-      if (!snap.exists()) {
+    const unsubscribe = onSnapshot(coursePlanRef, async (coursePlanSnap) => {
+      if (!coursePlanSnap.exists()) {
         setCoursePlan(null);
-        setCourses([]);
+        setSelectedCourses([]);
         return;
       }
 
-      const plan = snap.data() as CoursePlanDoc;
-      setCoursePlan(plan);
-
-      const resolvedCourses = await Promise.all(
-        plan.courses.map(async (ref) => {
-          const courseSnap = await getDoc(ref);
-          const data = courseSnap.data();
-
-          if (!data) return null;
-
-          return {
-            courseId: courseSnap.id,
-            ...(data as Omit<CourseDoc, "courseId">),
-          };
-        }),
+      const coursePlanData = coursePlanSnap.data() as CoursePlanDoc;
+      const courseSnapshots = await Promise.all(
+        (coursePlanData.courses ?? []).map((courseRef) => getDoc(courseRef)),
       );
+      const courses = courseSnapshots
+        .filter((snap) => snap.exists())
+        .map((snap) => snap.data() as CourseDoc);
 
-      setCourses(resolvedCourses.filter(Boolean) as CourseDoc[]);
+      setCoursePlan(coursePlanData);
+      setSelectedCourses(courses);
     });
 
-    return () => unsubscribe();
-  });
-
-  const addCourse = useCallback(
-    async (courseRef: DocumentReference) => {
-      await runTransaction(db, async (tx) => {
-        const planSnap = await tx.get(coursePlanRef);
-        if (!planSnap.exists()) return;
-
-        const plan = planSnap.data() as CoursePlanDoc;
-
-        const courseSnap = await getDoc(courseRef);
-        const credits = courseSnap.data()?.credits ?? 0;
-
-        if (plan.totalCredits + credits > 70) {
-          throw new Error("Credit limit exceeded");
-        }
-
-        tx.update(coursePlanRef, {
-          courses: [...plan.courses, courseRef],
-          totalCredits: plan.totalCredits + credits,
-        });
-      });
-    },
-    [coursePlanRef],
-  );
-
-  const replaceCourse = useCallback(
-    async (index: number, newCourseRef: DocumentReference) => {
-      await runTransaction(db, async (tx) => {
-        const planSnap = await tx.get(coursePlanRef);
-        if (!planSnap.exists()) return;
-
-        const plan = planSnap.data() as CoursePlanDoc;
-
-        const oldRef = plan.courses[index];
-
-        const oldCredits = (await getDoc(oldRef)).data()?.credits ?? 0;
-        const newCredits = (await getDoc(newCourseRef)).data()?.credits ?? 0;
-
-        const newTotal = plan.totalCredits - oldCredits + newCredits;
-
-        if (newTotal > 70) {
-          throw new Error("Credit limit exceeded");
-        }
-
-        const updatedCourses = [...plan.courses];
-        updatedCourses[index] = newCourseRef;
-
-        tx.update(coursePlanRef, {
-          courses: updatedCourses,
-          totalCredits: newTotal,
-        });
-      });
-    },
-    [coursePlanRef],
-  );
-
-  const removeCourse = useCallback(
-    async (index: number) => {
-      await runTransaction(db, async (tx) => {
-        const planSnap = await tx.get(coursePlanRef);
-        if (!planSnap.exists()) return;
-
-        const plan = planSnap.data() as CoursePlanDoc;
-        const ref = plan.courses[index];
-
-        const credits = (await getDoc(ref)).data()?.credits ?? 0;
-
-        tx.update(coursePlanRef, {
-          courses: plan.courses.filter((_, i) => i !== index),
-          totalCredits: plan.totalCredits - credits,
-        });
-      });
-    },
-    [coursePlanRef],
-  );
-
-  const selectedCourseIds = courses.map((course) => course.courseId);
+    return unsubscribe;
+  }, [coursePlanRef]);
 
   return (
-    <Dialog>
-      <Card className="min-w-100">
-        <CardHeader>
-          <CardTitle>{gradeLevel}th Grade</CardTitle>
-          <CardDescription>
-            {coursePlan?.totalCredits ?? 0} credits
-          </CardDescription>
-          <CardAction onClick={() => setExpanded(!expanded)}>
-            {expanded ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
-          </CardAction>
-        </CardHeader>
+    <div className="flex-1">
+      <Dialog>
+        <Card className="w-full">
+          <CardHeader>
+            <CardTitle>{gradeLevel}th Grade</CardTitle>
+            <CardDescription>{courseCredits ?? 0} credits</CardDescription>
+            <CardAction onClick={() => setExpanded(!expanded)}>
+              {expanded ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
+            </CardAction>
+          </CardHeader>
 
-        {expanded && (
-          <>
-            <CardContent>
-              {courses.map((course, index) => (
-                <Course
-                  key={course.courseId}
-                  course={course}
-                  onDelete={() => removeCourse(index)}
-                />
-              ))}
-            </CardContent>
-
-            <CardFooter>
-              <DialogTrigger asChild>
-                <Button
-                  disabled={!coursePlan || coursePlan.totalCredits >= 70}
-                  className="w-full border-dashed"
-                  variant="outline"
-                >
-                  <Plus /> Add course
-                </Button>
-              </DialogTrigger>
-            </CardFooter>
-          </>
-        )}
-      </Card>
-
-      <DialogContent showCloseButton={false}>
-        <DialogHeader>
-          <DialogTitle>Add course</DialogTitle>
-          <DialogDescription>
-            Select a course from your school&apos;s catalog and add it to your
-            course plan.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="mb-2">
-          <div className="flex gap-2 items-center">
-            <InputGroup>
-              <InputGroupInput
-                placeholder="Search by course name..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <InputGroupAddon align="inline-end">
-                <Search />
-              </InputGroupAddon>
-            </InputGroup>
-          </div>
-        </div>
-
-        <ScrollArea className="h-100 border rounded-lg p-2">
-          <RadioGroup value={radioSelect} onValueChange={setRadioSelect}>
-            {catalog
-              .filter((course) => {
-                if (!searchQuery) return true;
-                const q = searchQuery.toLowerCase();
-                return (
-                  course.title.toLowerCase().includes(q) ||
-                  course.courseId.toLowerCase().includes(q)
-                );
-              })
-              .map((course) => {
-                const disabled = isDisabled(course.courseId);
-
-                return (
-                  <div
+          {expanded && (
+            <>
+              <CardContent className="space-y-2">
+                {selectedCourses.map((course, index) => (
+                  <Course
                     key={course.courseId}
-                    className="flex gap-2 items-center"
-                  >
-                    <RadioGroupItem
-                      value={course.courseId}
-                      id={course.courseId}
-                      disabled={disabled}
-                    >
-                      {course.title} ({course.credits})
-                      {disabled && " - already added"}
-                    </RadioGroupItem>
-                    <div className="flex flex-col">
-                      <Label htmlFor={course.courseId}>{course.title}</Label>
-                      <p className="text-xs text-muted-foreground">
-                        {course.credits} credits
-                      </p>
-                    </div>
-                    <div className="flex-1" />
-                    {course.isHonors ? (
-                      <Star className="text-yellow-500" size={16} />
-                    ) : (
-                      <></>
-                    )}
-                  </div>
-                );
-              })}
+                    course={course}
+                    onDelete={() => handleDelete(index)}
+                  />
+                ))}
+              </CardContent>
+              <CardFooter>
+                {!coursePlan || coursePlan.totalCredits >= 70 ? (
+                  <p className="w-full flex items-center justify-center text-sm">
+                    Maximum credit limit reached.
+                  </p>
+                ) : (
+                  <DialogTrigger asChild>
+                    <Button className="w-full border-dashed" variant="outline">
+                      <Plus /> Add course
+                    </Button>
+                  </DialogTrigger>
+                )}
+              </CardFooter>
+            </>
+          )}
+        </Card>
 
-            {catalog.filter((course) => {
-              if (!searchQuery) return false;
-              const q = searchQuery.toLowerCase();
-              return (
-                course.title.toLowerCase().includes(q) ||
-                course.courseId.toLowerCase().includes(q)
-              );
-            }).length === 0 && (
-              <p className="p-4 text-sm text-muted-foreground">
-                No courses found
-              </p>
-            )}
-          </RadioGroup>
-        </ScrollArea>
-        <DialogFooter>
-          <DialogClose asChild>
-            <Button variant="secondary">
-              <X /> Cancel
-            </Button>
-          </DialogClose>
-          <DialogClose asChild>
-            <Button onClick={() => handleSelect()}>
-              <Save /> Save
-            </Button>
-          </DialogClose>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+        <DialogContent showCloseButton={false}>
+          <DialogHeader>
+            <DialogTitle>Add course</DialogTitle>
+            <DialogDescription>
+              Select a course from your school&apos;s catalog and add it to your
+              course plan.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="mb-2">
+            <div className="flex gap-2 items-center">
+              <InputGroup>
+                <InputGroupInput
+                  placeholder="Search by course name..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <InputGroupAddon align="inline-end">
+                  <Search />
+                </InputGroupAddon>
+              </InputGroup>
+            </div>
+          </div>
+
+          <ScrollArea className="h-100 border rounded-lg p-2">
+            <RadioGroup value={radioSelect} onValueChange={setRadioSelect}>
+              {catalog
+                .filter((course) => {
+                  if (!searchQuery) return true;
+                  const q = searchQuery.toLowerCase();
+                  return (
+                    course.title.toLowerCase().includes(q) ||
+                    course.courseId.toLowerCase().includes(q)
+                  );
+                })
+                .map((course) => {
+                  const disabled = selectedCourseIds.includes(course.courseId);
+
+                  return (
+                    <div
+                      key={course.courseId}
+                      className="flex gap-2 items-center"
+                    >
+                      <RadioGroupItem
+                        value={course.courseId}
+                        id={course.courseId}
+                        disabled={disabled}
+                      >
+                        {course.title} ({course.credits})
+                      </RadioGroupItem>
+                      <div className="flex flex-col">
+                        <Label htmlFor={course.courseId}>{course.title}</Label>
+                        <p className="text-xs text-muted-foreground">
+                          {course.credits} credits
+                        </p>
+                      </div>
+                      <div className="flex-1" />
+                      {course.isHonors ? (
+                        <Star className="text-yellow-500" size={16} />
+                      ) : (
+                        <></>
+                      )}
+                    </div>
+                  );
+                })}
+
+              {catalog.filter((course) => {
+                if (!searchQuery || searchQuery == "") return true;
+                const query = searchQuery.toLowerCase();
+                return course.title.toLowerCase().includes(query);
+              }).length === 0 && (
+                <p className="justify-center items-center absolute h-full inset-0 flex text-sm text-muted-foreground">
+                  No courses found.
+                </p>
+              )}
+            </RadioGroup>
+          </ScrollArea>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="secondary">
+                <X /> Cancel
+              </Button>
+            </DialogClose>
+            <DialogClose asChild>
+              <Button onClick={() => handleSelect()}>
+                <Save /> Save
+              </Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </div>
   );
 }
