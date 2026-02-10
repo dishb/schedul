@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+::selection,
+::-moz-selection {
+  background: #efefef;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

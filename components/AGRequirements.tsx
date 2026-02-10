@@ -64,7 +64,7 @@ export default function AGRequirements({ agCounts }: AGRequirementsProps) {
                       </span>
                     </div>
                     <span className="text-sm font-medium">
-                      {count} out of{" "}
+                      {count} /{" "}
                       {recommended
                         ? requirement.recommended
                         : requirement.required}{" "}
