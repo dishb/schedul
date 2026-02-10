@@ -8,6 +8,7 @@ import {
   increment,
   doc,
   getDocs,
+  collection,
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type UserDoc from "@/types/UserDoc";
@@ -27,24 +28,33 @@ export async function getAGCompleted(uid: string) {
   const userData = await getUserInformation(uid);
   if (!userData) return agCounter;
 
-  const coursePlansSnap = await getDocs(userData.coursePlans);
+  const coursePlansRef = collection(db, "users", uid, "coursePlans");
+  const coursePlansSnap = await getDocs(coursePlansRef);
   if (coursePlansSnap.docs.length === 0) return agCounter;
 
-  coursePlansSnap.docs.forEach((coursePlanDoc) => {
-    if (!coursePlanDoc.exists()) return agCounter;
+  for (const coursePlanDoc of coursePlansSnap.docs) {
+    if (!coursePlanDoc.exists()) continue;
     const coursePlanData = coursePlanDoc.data() as CoursePlanDoc;
 
-    coursePlanData.courses.forEach(async (courseRef) => {
-      const courseDoc = await getDoc(courseRef);
-      if (!courseDoc.exists()) return agCounter;
+    const courseDocs = await Promise.all(
+      coursePlanData.courses.map((courseRef) => getDoc(courseRef)),
+    );
+
+    for (const courseDoc of courseDocs) {
+      if (!courseDoc.exists()) continue;
 
       const courseData = courseDoc.data() as CourseDoc;
-      const key = courseData.subjectAreaCode as keyof typeof agCounter;
+      const key =
+        courseData.subjectAreaCode.toLowerCase() as keyof typeof agCounter;
       if (Object.prototype.hasOwnProperty.call(agCounter, key)) {
-        agCounter[key]++;
+        if (courseData.subjectAreaCode.toLowerCase() === "e") {
+          agCounter[key] += courseData.credits;
+        } else {
+          agCounter[key] += courseData.credits;
+        }
       }
-    });
-  });
+    }
+  }
 
   return agCounter;
 }
