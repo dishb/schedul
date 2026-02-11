@@ -48,7 +48,13 @@ export async function getAGCompleted(uid: string) {
         courseData.subjectAreaCode.toLowerCase() as keyof typeof agCounter;
       if (Object.prototype.hasOwnProperty.call(agCounter, key)) {
         if (courseData.subjectAreaCode.toLowerCase() === "e") {
-          agCounter[key] += courseData.credits;
+          if (courseData.title.includes("III")) {
+            agCounter[key] += courseData.credits * 3;
+          } else if (courseData.title.includes("II")) {
+            agCounter[key] += courseData.credits * 2;
+          } else {
+            agCounter[key] += courseData.credits;
+          }
         } else {
           agCounter[key] += courseData.credits;
         }
