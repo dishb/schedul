@@ -49,7 +49,7 @@ export default function Page() {
 
   return (
     <div className="w-full flex flex-col pb-6">
-      <h1 className="font-bold text-4xl ml-6 mb-6 mt-18">
+      <h1 className="font-bold text-4xl ml-6 mb-6">
         Welcome, {userInfo?.firstName ?? ""}!
       </h1>
 

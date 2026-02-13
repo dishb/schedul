@@ -15,7 +15,7 @@ import type SignUpData from "@/types/SignUpData";
 import type LoginData from "@/types/LoginData";
 
 export const AuthContext = createContext<AuthContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -32,7 +32,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       (error) => {
         console.error("An auth state change error occurred:", error);
         setLoading(false);
-      }
+      },
     );
 
     return () => unsubscribe();
@@ -55,7 +55,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         data.email,
-        data.password
+        data.password,
       );
       const user = userCredential.user;
 
@@ -90,7 +90,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           "users",
           user.uid,
           "coursePlans",
-          gradeLevel
+          gradeLevel,
         );
 
         await setDoc(coursePlanRef, {

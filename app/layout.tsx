@@ -16,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <AuthProvider>
-          <main>{children}</main>
-        </AuthProvider>
+        <AuthProvider>{children}</AuthProvider>
 
         <Toaster closeButton />
       </body>
