@@ -31,12 +31,12 @@ export function useSchoolCourses(schoolId: string, gradeLevel: number) {
     if (!listenerCache.has(key)) {
       const coursesRef = collection(db, "schools", schoolId, "courses");
 
-      const coursesQuery = query(
-        coursesRef,
-        where("gradeLevels", "array-contains", gradeLevel.toString()),
-      );
+      // const coursesQuery = query(
+      //   coursesRef,
+      //   where("gradeLevels", "array-contains", gradeLevel.toString()),
+      // );
 
-      const unsubscribe = onSnapshot(coursesQuery, (snap) => {
+      const unsubscribe = onSnapshot(coursesRef, (snap) => {
         const data: CourseDoc[] = snap.docs.map((d) => ({
           id: d.id,
           ...(d.data() as Omit<CourseDoc, "id">),

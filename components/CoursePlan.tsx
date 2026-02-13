@@ -74,6 +74,7 @@ export default function CoursePlan({
 
     addCourse(coursePlanRef, courseRef);
     setRadioSelect("");
+    setSearchQuery("");
   }
 
   function handleDelete(index: number) {
@@ -178,12 +179,11 @@ export default function CoursePlan({
             <RadioGroup value={radioSelect} onValueChange={setRadioSelect}>
               {catalog
                 .filter((course) => {
-                  if (!searchQuery) return true;
-                  const q = searchQuery.toLowerCase();
-                  return (
-                    course.title.toLowerCase().includes(q) ||
-                    course.courseId.toLowerCase().includes(q)
-                  );
+                  if (!searchQuery || searchQuery === "") return true;
+                  const loweredSearchQuery = searchQuery.toLowerCase();
+                  return course.title
+                    .toLowerCase()
+                    .includes(loweredSearchQuery);
                 })
                 .map((course) => {
                   const disabled = selectedCourseIds.includes(course.courseId);
