@@ -3,7 +3,7 @@ import type { Timestamp, CollectionReference } from "firebase/firestore";
 export default interface UserDoc {
   coursePlans: CollectionReference;
   createdAt: Timestamp;
-  email: strig;
+  email: string;
   firstName: string;
   lastName: string;
   schoolId: number;

@@ -6,7 +6,7 @@ import { Trash } from "lucide-react";
 
 export default function Course({ course, onDelete }: CourseProps) {
   return (
-    <div className="flex p-4 justify-between border rounded-lg">
+    <div className="flex gap-1 p-4 justify-between border rounded-lg">
       <div className="flex flex-col">
         <div className="flex gap-2 items-center">
           <p className="text-sm">{course.title}</p>

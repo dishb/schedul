@@ -9,7 +9,7 @@ import {
   CardFooter,
   CardAction,
 } from "@/components/ui/card";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   Minimize2,
   Maximize2,
@@ -31,12 +31,12 @@ import {
   DialogClose,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { doc, getDoc, onSnapshot } from "firebase/firestore";
+import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type CoursePlanDoc from "@/types/CoursePlanDoc";
 import type CourseDoc from "@/types/CourseDoc";
-import { useSchoolCourses } from "@/hooks/useSchoolCourses";
+import { useSchoolCourses, useSchoolCoursesMap } from "@/hooks/useSchoolCourses";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import type CoursePlanProps from "@/types/CoursePlanProps";
@@ -54,10 +54,10 @@ export default function CoursePlan({
 }: CoursePlanProps) {
   const [expanded, setExpanded] = useState(true);
   const [coursePlan, setCoursePlan] = useState<CoursePlanDoc | null>(null);
-  const [selectedCourses, setSelectedCourses] = useState<CourseDoc[]>([]);
   const [radioSelect, setRadioSelect] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
-  const catalog = useSchoolCourses(schoolId, gradeLevel);
+  const catalog = useSchoolCourses(schoolId);
+  const catalogMap = useSchoolCoursesMap(schoolId);
   const coursePlanRef = doc(
     db,
     "users",
@@ -65,48 +65,49 @@ export default function CoursePlan({
     "coursePlans",
     gradeLevel.toString(),
   );
-  const courseCredits = coursePlan?.totalCredits || 0;
+
+  const selectedCourses = useMemo(() => {
+    if (!coursePlan?.courses) return [];
+    return (coursePlan.courses ?? [])
+      .map((ref) => catalogMap.get(ref.id))
+      .filter((c): c is CourseDoc => c != null);
+  }, [coursePlan, catalogMap]);
+
+  const courseCredits = coursePlan?.totalCredits ?? 0;
   const selectedCourseIds = selectedCourses.map((course) => course.courseId);
 
   function handleSelect() {
     if (selectedCourseIds.includes(radioSelect) || radioSelect === "") return;
+    const course = catalogMap.get(radioSelect);
+    if (!course) return;
     const courseRef = doc(db, "schools", schoolId, "courses", radioSelect);
 
-    addCourse(coursePlanRef, courseRef);
+    addCourse(coursePlanRef, courseRef, course.credits);
     setRadioSelect("");
     setSearchQuery("");
   }
 
   function handleDelete(index: number) {
+    const course = selectedCourses[index];
     const courseRef = doc(
       db,
       "schools",
       schoolId,
       "courses",
-      selectedCourses[index].courseId,
+      course.courseId,
     );
 
-    deleteCourse(coursePlanRef, courseRef);
+    deleteCourse(coursePlanRef, courseRef, course.credits);
   }
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(coursePlanRef, async (coursePlanSnap) => {
+    const unsubscribe = onSnapshot(coursePlanRef, (coursePlanSnap) => {
       if (!coursePlanSnap.exists()) {
         setCoursePlan(null);
-        setSelectedCourses([]);
         return;
       }
-
       const coursePlanData = coursePlanSnap.data() as CoursePlanDoc;
-      const courseSnapshots = await Promise.all(
-        (coursePlanData.courses ?? []).map((courseRef) => getDoc(courseRef)),
-      );
-      const courses = courseSnapshots
-        .filter((snap) => snap.exists())
-        .map((snap) => snap.data() as CourseDoc);
-
       setCoursePlan(coursePlanData);
-      setSelectedCourses(courses);
     });
 
     return unsubscribe;
@@ -160,19 +161,17 @@ export default function CoursePlan({
               course plan.
             </DialogDescription>
           </DialogHeader>
-          <div className="mb-2">
-            <div className="flex gap-2 items-center">
-              <InputGroup>
-                <InputGroupInput
-                  placeholder="Search by course name..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <InputGroupAddon align="inline-end">
-                  <Search />
-                </InputGroupAddon>
-              </InputGroup>
-            </div>
+          <div className="flex gap-2 items-center">
+            <InputGroup>
+              <InputGroupInput
+                placeholder="Search by course name..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              <InputGroupAddon align="inline-end">
+                <Search />
+              </InputGroupAddon>
+            </InputGroup>
           </div>
 
           <ScrollArea className="h-100 border rounded-lg p-2">

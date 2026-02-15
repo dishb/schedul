@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { collection, onSnapshot, query, where } from "firebase/firestore";
+import { useEffect, useState, useMemo } from "react";
+import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type CourseDoc from "@/types/CourseDoc";
 
@@ -9,57 +9,59 @@ const catalogCache = new Map<string, CourseDoc[]>();
 const listenerCache = new Map<string, () => void>();
 const subscribers = new Map<string, Set<() => void>>();
 
-export function useSchoolCourses(schoolId: string, gradeLevel: number) {
-  const key = `${schoolId}:${gradeLevel}`;
-
+export function useSchoolCourses(schoolId: string): CourseDoc[] {
   const [courses, setCourses] = useState<CourseDoc[]>(() => {
-    return catalogCache.get(key) ?? [];
+    return catalogCache.get(schoolId) ?? [];
   });
 
   useEffect(() => {
-    if (!schoolId || !gradeLevel) return;
+    if (!schoolId) return;
 
     const notify = () => {
-      setCourses(catalogCache.get(key) ?? []);
+      setCourses(catalogCache.get(schoolId) ?? []);
     };
 
-    if (!subscribers.has(key)) {
-      subscribers.set(key, new Set());
+    if (!subscribers.has(schoolId)) {
+      subscribers.set(schoolId, new Set());
     }
-    subscribers.get(key)!.add(notify);
+    subscribers.get(schoolId)!.add(notify);
 
-    if (!listenerCache.has(key)) {
+    if (!listenerCache.has(schoolId)) {
       const coursesRef = collection(db, "schools", schoolId, "courses");
-
-      // const coursesQuery = query(
-      //   coursesRef,
-      //   where("gradeLevels", "array-contains", gradeLevel.toString()),
-      // );
 
       const unsubscribe = onSnapshot(coursesRef, (snap) => {
         const data: CourseDoc[] = snap.docs.map((d) => ({
-          id: d.id,
-          ...(d.data() as Omit<CourseDoc, "id">),
+          ...(d.data() as Omit<CourseDoc, "courseId">),
+          courseId: d.id,
         }));
 
-        catalogCache.set(key, data);
-        subscribers.get(key)?.forEach((fn) => fn());
+        catalogCache.set(schoolId, data);
+        subscribers.get(schoolId)?.forEach((fn) => fn());
       });
 
-      listenerCache.set(key, unsubscribe);
+      listenerCache.set(schoolId, unsubscribe);
     }
 
     return () => {
-      subscribers.get(key)?.delete(notify);
+      subscribers.get(schoolId)?.delete(notify);
 
-      if (subscribers.get(key)?.size === 0) {
-        subscribers.delete(key);
-        listenerCache.get(key)?.();
-        listenerCache.delete(key);
-        catalogCache.delete(key);
+      if (subscribers.get(schoolId)?.size === 0) {
+        subscribers.delete(schoolId);
+        listenerCache.get(schoolId)?.();
+        listenerCache.delete(schoolId);
+        catalogCache.delete(schoolId);
       }
     };
-  }, [schoolId, gradeLevel, key]);
+  }, [schoolId]);
 
   return courses;
+}
+
+/** O(1) lookup by courseId. Use when resolving many refs (e.g. course plan). */
+export function useSchoolCoursesMap(schoolId: string): Map<string, CourseDoc> {
+  const courses = useSchoolCourses(schoolId);
+  return useMemo(
+    () => new Map(courses.map((c) => [c.courseId, c])),
+    [courses],
+  );
 }

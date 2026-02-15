@@ -18,7 +18,7 @@ const missingVars = Object.entries(requiredEnvVars)
 
 if (missingVars.length > 0) {
   throw new Error(
-    `Missing required Firebase environment variables: ${missingVars.join(", ")}`
+    `Missing required Firebase environment variables: ${missingVars.join(", ")}`,
   );
 }
 
@@ -38,7 +38,7 @@ try {
 } catch (error) {
   console.error("Firebase initialization error:", error);
   throw new Error(
-    "Failed to initialize Firebase. Please check the configuration."
+    "Failed to initialize Firebase. Please check the configuration.",
   );
 }
 
