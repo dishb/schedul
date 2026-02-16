@@ -42,4 +42,4 @@ next-env.d.ts
 
 *.pdf
 .venv
-firebase_admin.json
+firebase_admin*.json

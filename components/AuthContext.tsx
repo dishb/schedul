@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import { auth, db } from "@/lib/firebase";
 import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { clearUserInfoCache } from "@/lib/actions";
 import type AuthContextType from "@/types/AuthContextType";
 import type SignUpData from "@/types/SignUpData";
 import type LoginData from "@/types/LoginData";
@@ -112,6 +113,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const logout = async (): Promise<void> => {
     try {
+      clearUserInfoCache();
       await signOut(auth);
     } catch (error) {
       const errorMessage =

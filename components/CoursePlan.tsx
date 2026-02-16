@@ -31,7 +31,7 @@ import {
   DialogClose,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { doc, onSnapshot } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type CoursePlanDoc from "@/types/CoursePlanDoc";
@@ -61,12 +61,10 @@ export default function CoursePlan({
   const [searchQuery, setSearchQuery] = useState("");
   const catalog = useSchoolCourses(schoolId);
   const catalogMap = useSchoolCoursesMap(schoolId);
-  const coursePlanRef = doc(
-    db,
-    "users",
-    userId,
-    "coursePlans",
-    gradeLevel.toString(),
+  const coursePlanRef = useMemo(
+    () =>
+      doc(db, "users", userId, "coursePlans", gradeLevel.toString()),
+    [userId, gradeLevel],
   );
 
   const selectedCourses = useMemo(() => {
@@ -79,35 +77,63 @@ export default function CoursePlan({
   const courseCredits = coursePlan?.totalCredits ?? 0;
   const selectedCourseIds = selectedCourses.map((course) => course.courseId);
 
-  function handleSelect() {
+  async function handleSelect() {
     if (selectedCourseIds.includes(radioSelect) || radioSelect === "") return;
     const course = catalogMap.get(radioSelect);
     if (!course) return;
     const courseRef = doc(db, "schools", schoolId, "courses", radioSelect);
 
-    addCourse(coursePlanRef, courseRef, course.credits);
+    const prev = coursePlan;
+    if (prev) {
+      setCoursePlan({
+        ...prev,
+        courses: [...(prev.courses ?? []), courseRef],
+        totalCredits: (prev.totalCredits ?? 0) + course.credits,
+      });
+    }
     setRadioSelect("");
     setSearchQuery("");
+
+    try {
+      await addCourse(coursePlanRef, courseRef, course.credits);
+    } catch {
+      const snap = await getDoc(coursePlanRef);
+      setCoursePlan(snap.exists() ? (snap.data() as CoursePlanDoc) : null);
+    }
   }
 
-  function handleDelete(index: number) {
+  async function handleDelete(index: number) {
     const course = selectedCourses[index];
     const courseRef = doc(db, "schools", schoolId, "courses", course.courseId);
 
-    deleteCourse(coursePlanRef, courseRef, course.credits);
+    const prev = coursePlan;
+    if (prev?.courses) {
+      setCoursePlan({
+        ...prev,
+        courses: prev.courses.filter((_, i) => i !== index),
+        totalCredits: (prev.totalCredits ?? 0) - course.credits,
+      });
+    }
+
+    try {
+      await deleteCourse(coursePlanRef, courseRef, course.credits);
+    } catch {
+      const snap = await getDoc(coursePlanRef);
+      setCoursePlan(snap.exists() ? (snap.data() as CoursePlanDoc) : null);
+    }
   }
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(coursePlanRef, (coursePlanSnap) => {
-      if (!coursePlanSnap.exists()) {
-        setCoursePlan(null);
-        return;
-      }
-      const coursePlanData = coursePlanSnap.data() as CoursePlanDoc;
-      setCoursePlan(coursePlanData);
+    let mounted = true;
+
+    getDoc(coursePlanRef).then((snap) => {
+      if (!mounted) return;
+      setCoursePlan(snap.exists() ? (snap.data() as CoursePlanDoc) : null);
     });
 
-    return unsubscribe;
+    return () => {
+      mounted = false;
+    };
   }, [coursePlanRef]);
 
   return (
