@@ -35,6 +35,7 @@ import {
   InputGroupInput,
 } from "@/components/ui/input-group";
 import { Spinner } from "@/components/ui/spinner";
+import { handleAuthError } from "@/lib/utils";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -62,15 +63,9 @@ export default function LoginForm() {
     try {
       await signIn(data);
       toast.success("Successfully signed in!");
-
       router.push("/dashboard");
     } catch (error) {
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : "An error occurred during sign in.";
-      toast.error(errorMessage);
-      loginForm.setValue("password", "");
+      handleAuthError(error);
     } finally {
       setIsSubmitting(false);
     }

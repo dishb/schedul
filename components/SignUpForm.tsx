@@ -37,6 +37,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Spinner } from "@/components/ui/spinner";
+import { handleAuthError } from "@/lib/utils";
 
 export default function SignUpForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -75,12 +76,7 @@ export default function SignUpForm() {
       toast.success("Account created successfully. Welcome to Schedul!");
       router.push("/dashboard");
     } catch (error) {
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : "An error occurred during sign up.";
-      toast.error(errorMessage);
-      signUpForm.setValue("password", "");
+      handleAuthError(error);
     } finally {
       setIsSubmitting(false);
     }

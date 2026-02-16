@@ -1,11 +1,25 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { toast } from "sonner";
+import { AuthError } from "firebase/auth";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getAuthErrorMessage(errorCode: string): string {
+export function handleAuthError(error: unknown) {
+  let errorMessage = "";
+  if (error && typeof error === "object" && "code" in error) {
+    const authError = error as AuthError;
+    errorMessage = translateFirebaseError(authError.code);
+  } else if (error instanceof Error) {
+    errorMessage = error.message;
+  }
+
+  toast.error(errorMessage);
+}
+
+export function translateFirebaseError(errorCode: string): string {
   switch (errorCode) {
     case "auth/invalid-email":
       return "Invalid email address.";
