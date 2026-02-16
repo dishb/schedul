@@ -36,7 +36,10 @@ import { db } from "@/lib/firebase";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type CoursePlanDoc from "@/types/CoursePlanDoc";
 import type CourseDoc from "@/types/CourseDoc";
-import { useSchoolCourses, useSchoolCoursesMap } from "@/hooks/useSchoolCourses";
+import {
+  useSchoolCourses,
+  useSchoolCoursesMap,
+} from "@/hooks/useSchoolCourses";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import type CoursePlanProps from "@/types/CoursePlanProps";
@@ -89,13 +92,7 @@ export default function CoursePlan({
 
   function handleDelete(index: number) {
     const course = selectedCourses[index];
-    const courseRef = doc(
-      db,
-      "schools",
-      schoolId,
-      "courses",
-      course.courseId,
-    );
+    const courseRef = doc(db, "schools", schoolId, "courses", course.courseId);
 
     deleteCourse(coursePlanRef, courseRef, course.credits);
   }
