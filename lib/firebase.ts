@@ -1,10 +1,5 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
-import {
-  getFirestore,
-  initializeFirestore,
-  persistentLocalCache,
-  type Firestore,
-} from "firebase/firestore";
+import { getFirestore, type Firestore } from "firebase/firestore";
 import { getAuth, type Auth } from "firebase/auth";
 
 const requiredEnvVars = {
@@ -47,12 +42,7 @@ try {
   );
 }
 
-const db: Firestore =
-  typeof window !== "undefined"
-    ? initializeFirestore(app, {
-        localCache: persistentLocalCache({}),
-      })
-    : getFirestore(app);
+const db: Firestore = getFirestore(app);
 const auth: Auth = getAuth(app);
 
 if (!db) {

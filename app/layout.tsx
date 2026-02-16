@@ -4,7 +4,7 @@ import { AuthProvider } from "@/components/AuthContext";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "",
+  title: "Schedul",
   description: "",
 };
 

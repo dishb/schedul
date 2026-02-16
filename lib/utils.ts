@@ -1,4 +1,3 @@
-import type CoursePlanDoc from "@/types/CoursePlanDoc";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
