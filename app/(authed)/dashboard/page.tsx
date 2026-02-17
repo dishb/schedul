@@ -23,18 +23,23 @@ export default function Page() {
   }, [authLoading, user]);
 
   return (
-    <div className="w-full flex flex-col gap-6 px-6">
+    <div className="w-full flex flex-col gap-6 px-6 pb-6">
       {!loading && user && userInfo ? (
-        <div className="w-full flex items-start gap-6">
-          {gradeLevels.map((gradeLevel) => (
-            <CoursePlan
-              key={gradeLevel}
-              userId={user.uid}
-              gradeLevel={gradeLevel}
-              schoolId={userInfo.schoolId.toString()}
-            />
-          ))}
-        </div>
+        <>
+          <h1 className="font-bold text-3xl">
+            Welcome, {userInfo.firstName}
+          </h1>
+          <div className="w-full flex items-start gap-6">
+            {gradeLevels.map((gradeLevel) => (
+              <CoursePlan
+                key={gradeLevel}
+                userId={user.uid}
+                gradeLevel={gradeLevel}
+                schoolId={userInfo.schoolId.toString()}
+              />
+            ))}
+          </div>
+        </>
       ) : (
         <div className="flex gap-2 w-full justify-center items-center">
           <Spinner />
