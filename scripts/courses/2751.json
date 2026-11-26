@@ -7,13 +7,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP African Amer Studies",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -25,11 +25,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Gov/Pol (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -41,13 +41,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Human Geography (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -59,11 +59,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP US History (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -75,11 +75,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP World History (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -91,9 +91,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Civics (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -105,9 +105,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "US History (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -119,9 +119,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "World History (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -133,11 +133,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "African American Lit (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -149,11 +149,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Eng Lang/Comp (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -165,11 +165,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Eng Lit/Comp",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -181,12 +181,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Seminar (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -198,11 +198,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Creative Writing (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -214,11 +214,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Expository Writing (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -230,11 +230,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Deconstructing Race (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -246,14 +246,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ELD Lvl 3|ELD Lvl 3 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -265,14 +265,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ELD Lvl 4 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -284,9 +284,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|English 1 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -298,11 +298,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "English 1 Adv (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -314,11 +314,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "English 1 Intensive (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -330,9 +330,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "English 2 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -344,11 +344,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Eng 2 Adv (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -360,11 +360,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Eng. 10 Intensive",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -376,9 +376,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "English 3 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -390,11 +390,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Contemp Issues/Science Fic (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -405,12 +405,12 @@
     "subjectAreaCode": "b",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Exploring Society/Dystopian Lit (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "Exploring Society/Dystopian Lit (P)|Exploring/Dystopian Lit (P)",
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -422,11 +422,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Film as Literature (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -438,11 +438,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "English 3H (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -454,11 +454,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Podcasting &amp; Storytelling (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -470,11 +470,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "AAE",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -485,15 +485,15 @@
     "subjectAreaCode": "c",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "797086|Adv. Algebra II (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "|Adv. Algebra II (P)",
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -504,15 +504,32 @@
     "subjectAreaCode": "c",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Algebra I (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "|Algebra I (1) (P) R|Algebra I (2) (P) R|Algebra I (P)",
     "gradeLevels": [
       "9",
       "10"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
+  },
+  {
+    "title": "Algebra I A/B",
+    "courseId": "c913fecd-822a-46dc-ae15-21792edf3a0e",
+    "disciplineName": "Algebra I",
+    "subjectAreaCode": "c",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "|Algebra I A/B (A) (P)|Algebra I A/B (B) (P)|Algebra IB",
+    "gradeLevels": [
+      "9",
+      "10"
+    ],
+    "honorsTypeName": "None",
+    "isCte": false,
+    "isClassroomBased": true,
+    "courseLength": "Two Years"
   },
   {
     "title": "Algebra II",
@@ -521,15 +538,15 @@
     "subjectAreaCode": "c",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Algebra II|Algebra II (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "|Algebra II|Algebra II (1) (P) R|Algebra II (2) (P) R|Algebra II (P)",
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -541,12 +558,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Calculus AB (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -558,12 +575,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Calculus BC (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -575,12 +592,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP CSA",
-    "honorsTypeName": "AP",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -592,12 +609,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Precalculus (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -609,12 +626,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Statistics (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -626,11 +643,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Calculus|Calculus (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -642,12 +659,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Financial App",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -659,12 +676,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Geometry (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -676,14 +693,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Integrated Math I",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -695,14 +712,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Integrated Math II",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -714,9 +731,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Precalculus|Precalculus (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -728,12 +745,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Statistics (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -745,9 +762,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Ana/Phys (P)|ANA/PHYS(P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": true,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -759,13 +776,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Biology (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -777,13 +794,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Chemistry (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -795,13 +812,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Comp Sci Principles (HP)",
-    "honorsTypeName": "AP",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -813,12 +830,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Environ Science (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -830,12 +847,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Physics (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -846,10 +863,10 @@
     "subjectAreaCode": "d",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Biology (P)",
+    "transcriptAbbreviations": "|Biology (1) (P) R|Biology (2) (P) R|Biology (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -861,12 +878,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|BIOT",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -878,9 +895,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Chemistry (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -892,13 +909,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Earth and Space Science (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -909,14 +926,14 @@
     "subjectAreaCode": "d",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Forensic Science",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "Forensic Science|Forensic Science (P)",
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -928,13 +945,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors  PLTW Princ of Engin (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -946,12 +963,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Anatomy",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -963,9 +980,9 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|Honors Chemistry (HP)",
+    "gradeLevels": [],
     "honorsTypeName": "Honors",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -977,12 +994,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Physics (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -994,13 +1011,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Biomed Innov Honors",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1012,13 +1029,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Hon Aerospace Engin",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1030,12 +1047,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Digital Electronics (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1047,12 +1064,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|MI Honors",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1064,30 +1081,30 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Marine Science (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
   {
     "title": "Physics in the Universe",
-    "courseId": "ac1ac5ad-818e-4205-92ad-8fcfe0192d1b",
+    "courseId": "b123dde7-f0a0-406d-9904-b1f2ee251f1c",
     "disciplineName": "Interdisciplinary Sciences",
     "subjectAreaCode": "d",
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Physics in the Universe",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1099,13 +1116,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "/ 717019",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1117,12 +1134,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Hon Civil Engin &amp; Architecture",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1134,13 +1151,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Computer Integrated Manufact (P)|Computer Integrated Mfg (PLTW)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1152,14 +1169,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Computer Sci Essentials",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1171,13 +1188,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "PLTW Cybersecurity",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1189,13 +1206,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Environ Sustainability (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1207,13 +1224,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "PLTW Human Body Systems (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1225,13 +1242,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "PLTW Intro to Engin Design (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1243,11 +1260,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "PLTW Principles of Biomed (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1259,12 +1276,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Zoology (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -1276,14 +1293,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Amer Sign Lang I",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1295,14 +1312,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ASL II",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1314,13 +1331,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ASL III",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1332,13 +1349,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Chinese (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1350,12 +1367,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP French (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1367,12 +1384,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Spanish Language (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1384,14 +1401,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Chinese Mandarin 1 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1403,14 +1420,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Chinese Mandarin 2 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1422,14 +1439,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Chinese Mandarin 3 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1441,9 +1458,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "French 1 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1455,9 +1472,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "French 2 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1469,9 +1486,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "French 3 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1483,13 +1500,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": null,
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1501,13 +1518,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors French 4 (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1519,12 +1536,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Spanish 4 (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1536,9 +1553,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Spanish 1 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1550,9 +1567,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Spanish 2 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1564,9 +1581,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Spanish 3 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1578,14 +1595,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Spanish for Heritage Sp. 2",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1597,14 +1614,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Spanish Heritage Speak I",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1616,12 +1633,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Animation/Motion Graphics (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1633,13 +1650,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP 2-D Art and Design",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1651,12 +1668,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP 3-D Art and Design (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1668,13 +1685,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Studio Art, Drawing (AP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1686,13 +1703,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Music Theory",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1704,14 +1721,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Band 1 / 710600",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1723,14 +1740,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Band 2 - Symphonic Band (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1742,13 +1759,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Band 3 (HP) Jazz Ensemb",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1760,13 +1777,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Band 3 (HP) Wind Ensemb",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1778,14 +1795,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Chamber Vocal",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1797,14 +1814,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Concert Choir (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1816,14 +1833,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Dance 1 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1835,14 +1852,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Dance 2 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1854,13 +1871,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Adv Dance|Dance 3",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1872,12 +1889,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|Honors Dance 4 (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1889,9 +1906,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Drama 1 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1903,14 +1920,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Drama 2 (P) (CTE)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1922,13 +1939,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Drama 3",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1940,9 +1957,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Drawing 1 (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1954,14 +1971,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Fabrics and Fashion",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1973,14 +1990,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Graphic Publications",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -1991,15 +2008,15 @@
     "subjectAreaCode": "f",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Guitar 1 / 710450",
-    "honorsTypeName": "None",
-    "isCte": false,
+    "transcriptAbbreviations": "|Guitar 1 (P)",
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2011,14 +2028,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Guitar 2 / 710451",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2030,12 +2047,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Artist Portfolio (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2047,13 +2064,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Ceramics (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2065,12 +2082,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|Honors Dance 5 (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2082,12 +2099,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|Honors Drama 4 (HP)",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2099,14 +2116,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Improv",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2118,13 +2135,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Musical Theater (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2136,14 +2153,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Orchestra 1 - Strings (P) / 710479",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2155,14 +2172,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Orch 2 - Philharmonic (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2174,13 +2191,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Orchestra 3 - Honors Chamber (HP) / 710481",
-    "honorsTypeName": "Honors",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2192,9 +2209,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Sculpture/Ceramics (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2206,14 +2223,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Show Choir (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2225,14 +2242,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "2-D Design",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2244,12 +2261,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ROP Video Game",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2261,14 +2278,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Video Production 1",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2280,14 +2297,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Video Production 2",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2299,12 +2316,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Honors Video Production 3 (HP)|Video Prod III Honors",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2316,11 +2333,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Macro",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2332,11 +2349,11 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Micro|AP MicroEcon",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2348,12 +2365,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "AP Psych|Psych (AP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2365,12 +2382,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|AP Research (HP)",
-    "honorsTypeName": "AP",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "AP",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2382,11 +2399,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "AVID 10",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2398,11 +2415,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "AVID 11",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2414,11 +2431,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "AVID 12",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2430,30 +2447,30 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "AVID 9",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
   {
     "title": "Baking and Pastry",
-    "courseId": "7329c7d2-241c-4dab-bfaa-0767b4cd5553",
+    "courseId": "63719e69-0739-4f81-b236-153868ca03d0",
     "disciplineName": "Interdisciplinary",
     "subjectAreaCode": "g",
     "isHonors": 0,
     "isOnline": false,
-    "transcriptAbbreviations": "Baking and Pastry",
-    "honorsTypeName": "None",
-    "isCte": true,
+    "transcriptAbbreviations": "Baking and Pastry|Baking and Pastry (P)",
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2465,13 +2482,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Catering",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2483,13 +2500,30 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Child Growth",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
+    "isClassroomBased": true,
+    "courseLength": "Full Year"
+  },
+  {
+    "title": "Cisco CCNA: Introduction  to Networks",
+    "courseId": "6cad63e1-3767-4384-b72a-7d222c0a16e7",
+    "disciplineName": "Interdisciplinary",
+    "subjectAreaCode": "g",
+    "isHonors": 0,
+    "isOnline": false,
+    "transcriptAbbreviations": "Internet Engin/CCNA-2",
+    "gradeLevels": [
+      "11",
+      "12"
+    ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2501,12 +2535,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|ROP Construction Tech 1 (P) A|ROP Construction Tech 1 (P) B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2518,11 +2552,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Contemporary Health",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2534,14 +2568,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Culinary Arts 1/2",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2553,13 +2587,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Cybersecurity/ICT Essentials",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2571,12 +2605,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Dev Psych/Children I",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2588,12 +2622,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Dev Psych of Children A|Dev Psych of Children B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2605,12 +2639,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Dev Psych/Children II A|Dev Psych/Children II B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2622,9 +2656,9 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Economics (P)",
+    "gradeLevels": [],
     "honorsTypeName": "None",
     "isCte": false,
-    "gradeLevels": [],
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2636,13 +2670,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Econ. of Bus. Own.",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2654,13 +2688,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Ethnic Studies 1 (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2672,14 +2706,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Fashion &amp; Interior Design",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2691,12 +2725,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Film as Literature",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2708,11 +2742,11 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Health",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2724,12 +2758,12 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "Advanced Catering HP",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2741,13 +2775,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "ROP Marketing",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2759,14 +2793,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "International Cuisine",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2778,29 +2812,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Internet Engin/CCNA-1",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
-    "isClassroomBased": true,
-    "courseLength": "Full Year"
-  },
-  {
-    "title": "Internet Engineering 2 ",
-    "courseId": "bbc3b67a-024c-4e04-b74e-056ef378b816",
-    "disciplineName": "Interdisciplinary",
-    "subjectAreaCode": "g",
-    "isHonors": 0,
-    "isOnline": false,
-    "transcriptAbbreviations": "Internet Engin/CCNA-2",
     "honorsTypeName": "None",
     "isCte": true,
-    "gradeLevels": [
-      "11",
-      "12"
-    ],
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2812,14 +2829,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Intro to Criminal Justice",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2831,12 +2848,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Law &amp; Society",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2848,12 +2865,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|ROP Medical Occup. A|ROP Medical Occup. B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Two Years"
   },
@@ -2865,12 +2882,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|ROP Nursing A|ROP Nursing B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2882,14 +2899,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Personal Finance (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2901,13 +2918,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Psychology",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -2919,12 +2936,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|ROP Adv Auto Body Repair (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2936,13 +2953,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Auto Body Repair I",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2954,13 +2971,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Auto Technology A|Auto Technology B",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2972,13 +2989,13 @@
     "isHonors": 1,
     "isOnline": false,
     "transcriptAbbreviations": "|Criminal Justice Academy A|Criminal Justice Academy B",
-    "honorsTypeName": "Honors",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "Honors",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -2990,14 +3007,14 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Intro to Health Careers (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "9",
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -3009,12 +3026,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Sports/Entertain. Marketing",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -3026,13 +3043,13 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "|Sports Medicine II",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "10",
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -3044,12 +3061,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "Sprots Medicine/Athl Train (P)",
-    "honorsTypeName": "None",
-    "isCte": true,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": true,
     "isClassroomBased": true,
     "courseLength": "Full Year"
   },
@@ -3061,12 +3078,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "The Wild West (P)",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   },
@@ -3078,12 +3095,12 @@
     "isHonors": 0,
     "isOnline": false,
     "transcriptAbbreviations": "World War II",
-    "honorsTypeName": "None",
-    "isCte": false,
     "gradeLevels": [
       "11",
       "12"
     ],
+    "honorsTypeName": "None",
+    "isCte": false,
     "isClassroomBased": true,
     "courseLength": "Half Year"
   }

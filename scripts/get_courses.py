@@ -11,6 +11,7 @@ from os import remove
 
 from requests import get
 
+CURRENT_YEAR = 30
 SAVE_DIR_PATH = Path(__file__).resolve().parent / "courses"
 ALLOWED_KEYS = {"title",
                 "subjectAreaCode",
@@ -50,7 +51,7 @@ def get_compiled_course_info(institution_id: int) -> None:
 
     courses_save_path = SAVE_DIR_PATH / f"{institution_id}.json"
     # pylint: disable=line-too-long
-    res = get(f"https://hs-articulation.ucop.edu/api/public/courselist/institution/{institution_id}/list/29",
+    res = get(f"https://hs-articulation.ucop.edu/api/public/courselist/institution/{institution_id}/list/{CURRENT_YEAR}",
               timeout = 60
               )
     # pylint: enable=line-too-long
@@ -62,9 +63,11 @@ def get_compiled_course_info(institution_id: int) -> None:
             if key in ALLOWED_KEYS:
                 compiled_course[key] = course[key]
 
-        res = get(f"https://hs-articulation.ucop.edu/api/public/course/{course["courseId"]}/29",
+        # pylint: disable=line-too-long
+        res = get(f"https://hs-articulation.ucop.edu/api/public/course/{course["courseId"]}/{CURRENT_YEAR}",
                   timeout = 60
                   )
+        # pylint: enable=line-too-long
         course_info = res.json()
         for key in WANTED_KEYS:
             compiled_course[key] = course_info[key]

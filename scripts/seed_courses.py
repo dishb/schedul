@@ -41,7 +41,7 @@ def seed_school_courses(institution_id: int) -> None:
         case 2754:
             institution_title = "Amador Valley High School"
         case 2755:
-            institution_title = "Foothil High School"
+            institution_title = "Foothill High School"
         case 2751:
             institution_title = "Dublin High School"
 
